@@ -1,0 +1,33 @@
+.slick-list {
+  height: 100%;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.slick-prev {
+  color: white;
+  left: 0;
+}
+
+.slick-next {
+  color: white;
+  right: 0px;
+}
+
+.arrow-svg {
+  fill: white;
+}
+
+.arrow-prev {
+  left: 0;
+}
+
+.arrow-next {
+  right: 0;
+}

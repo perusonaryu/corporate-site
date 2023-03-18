@@ -15,6 +15,27 @@ $('.openbtn1').click(function () {
   $('#fadeout').toggleClass('animation');
 });
 
+$('.slide-items').slick({
+  arrows: true, // 矢印
+  // dots: true, // インジケーター
+  prevArrow: `<svg
+    class="arrow-svg arrow-prev"
+    viewBox="0 0 100 100"
+    width="20"
+    height="20"
+  >
+    <path d="M 20,50 L 65,90 L 70,85 L 30,50  L 70,15 L 65,10 Z"></path>
+  </svg>`,
+  nextArrow: `<svg
+    class="arrow-svg arrow-next"
+    viewBox="0 0 100 100"
+    width="20"
+    height="20"
+  >
+  <path d="M 20,50 L 65,90 L 70,85 L 30,50  L 70,15 L 65,10 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path>
+  </svg>`,
+});
+
 // // eachTextAnimeにappeartextというクラス名を付ける定義
 // function EachTextAnimeControl() {
 //   $('.eachTextAnime').each(function () {
