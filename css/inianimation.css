@@ -1,0 +1,47 @@
+.animation {
+  animation-name: animation;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  background-color: rgba(255, 255, 255);
+}
+
+@keyframes animation {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+
+  20% {
+    top: 0;
+    opacity: 0.85;
+  }
+
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+.eachTextAnime span {
+  opacity: 0;
+}
+
+.eachTextAnime.appeartext span {
+  animation: text_anime_on 3s ease-out forwards;
+}
+
+.text-animation li {
+  opacity: 0;
+  animation-name: text_anime_on;
+  animation-duration: 5s; /*１秒かけてアニメーション*/
+  animation-fill-mode: forwards;
+}
+
+@keyframes text_anime_on {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
