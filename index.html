@@ -7,21 +7,11 @@
     <title>SIMPLICITY</title>
     <link rel="stylesheet" href="css/dist.css" />
     <link rel="stylesheet" href="css/humberger.css" />
-    <link rel="stylesheet" href="css/inianimation.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
-    />
-    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="css/animation.css" />
   </head>
   <body class="overflow-hidden">
     <header
-      class="fixed top-0 h-[100px] w-full px-[40px] py-[10px] flex justify-between items-center bg-white z-50"
+      class="fixed top-0 h-[100px] w-full px-[40px] py-[10px] flex justify-between items-center bg-white z-10"
     >
       <h1 class="text-[14px] font-medium flex align-center">
         <a href="/"> SIMPLICITY </a>
@@ -32,31 +22,27 @@
     </header>
 
     <div
-      class="absolute top-0 w-full h-screen flex justify-center items-center animation-delay-6000 animation z-10"
+      id="white-back"
+      class="absolute top-0 w-full h-screen bg-white z-20 bgc-animation animation-delay-3000"
+    ></div>
+    <div
+      id="green-back"
+      class="absolute top-0 w-full h-screen bg-[#95C0A2] z-20 slideInOut flex justify-center items-center opacity-0"
     >
-      <div class="w-[90px] h-[90px] mx-auto mb-[100px] absolute top-[20%]">
-        <img src="./images/logo.png" alt="logo画像" class="fadeUp" />
-      </div>
-      <ul
-        class="flex text-animation justify-between w-[600px] absolute top-[55%] left-[25%]"
-      >
-        <li class="text-2xl">食</li>
-        <li class="animation-delay-1000 text-2xl">茶</li>
-        <li class="animation-delay-2000 text-2xl">菓</li>
-        <li class="animation-delay-3000 text-2xl">工</li>
-        <li class="animation-delay-4000 text-2xl">創</li>
-      </ul>
-      <p class="text-right absolute bottom-[25%] right-[20%]">SIMPLICITY</p>
+      <img
+        src="./images/logoicon.png"
+        alt="ロゴアイコン"
+        class="w-[100px] h-[100px] logo-animation [animation-delay:2.4s] opacity-0"
+      />
     </div>
-
     <main class="h-screen z-0 mx-4">
       <!-- 1ページ目 start -->
       <section class="p-2 h-[calc(100vh_-_100px)] mt-[100px]">
         <ul class="grid grid-cols-5 gap-5 h-full text-center">
-          <li class="group">
+          <li>
             <a href="#">
               <span
-                class="flex items-center justify-center h-[30%] inline-block opacity-0 group-hover:opacity-100 duration-500"
+                class="flex items-center justify-center h-[30%] inline-block"
                 >食</span
               >
               <img
@@ -66,10 +52,10 @@
               />
             </a>
           </li>
-          <li class="group">
+          <li>
             <a href="#">
               <span
-                class="flex items-center justify-center h-[30%] inline-block opacity-0 group-hover:opacity-100 duration-500"
+                class="flex items-center justify-center h-[30%] inline-block"
                 >茶</span
               >
               <img
@@ -79,10 +65,10 @@
               />
             </a>
           </li>
-          <li class="group">
+          <li>
             <a href="#">
               <span
-                class="flex items-center justify-center h-[30%] inline-block opacity-0 group-hover:opacity-100 duration-500"
+                class="flex items-center justify-center h-[30%] inline-block"
                 >菓</span
               >
               <img
@@ -92,10 +78,10 @@
               />
             </a>
           </li>
-          <li class="group">
+          <li>
             <a href="#">
               <span
-                class="flex items-center justify-center h-[30%] inline-block opacity-0 group-hover:opacity-100 duration-500"
+                class="flex items-center justify-center h-[30%] inline-block"
                 >工</span
               >
               <img
@@ -105,10 +91,10 @@
               />
             </a>
           </li>
-          <li class="group">
+          <li>
             <a href="#">
               <span
-                class="flex items-center justify-center h-[30%] inline-block opacity-0 group-hover:opacity-100 duration-500"
+                class="flex items-center justify-center h-[30%] inline-block"
                 >創</span
               >
               <img
@@ -123,12 +109,25 @@
       <!-- 1ページ目 end -->
 
       <!-- 2ページ目 start -->
-      <section class="p-2 h-[calc(100vh_-_100px)] mt-[100px]">
-        <ul class="slide-items h-full">
-          <li><img src="./images/slides/6.jpg" alt="" /></li>
-          <li><img src="./images/slides/6.jpg" alt="" /></li>
-          <li><img src="./images/slides/6.jpg" alt="" /></li>
-        </ul>
+      <section class="p-2 h-[calc(100vh_-_100px)] mt-[100px] relative">
+        <img src="./images/1.jpg" class="h-full w-full object-cover" />
+        <div class="p-2 absolute top-0 w-[66%] h-full right-0">
+          <div
+            class="bg-[rgba(20,20,20,0.7)] w-full h-full relative section-animation"
+          >
+            <div
+              class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white [writing-mode:vertical-rl] tracking-[0.25em] section-animation animation-delay-500"
+            >
+              <h3 class="ml-[30px] mt-[-30px] text-2xl">食</h3>
+              <div class="leading-10 text-[14px]">
+                <p>自然の恩恵をありがたく享受してきた</p>
+                <p>日本の豊かな食文化。</p>
+                <p>その伝統を尊び、確信する。</p>
+                <p>五感で味わう日本の感性。</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- 2ページ目 end -->
     </main>
@@ -139,10 +138,6 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
       integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
       crossorigin="anonymous"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script type="text/javascript" src="./index.js"></script>
   </body>

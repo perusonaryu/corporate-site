@@ -1,0 +1,83 @@
+.d-n {
+  display: none !important;
+}
+
+.section-animation {
+  opacity: 0;
+  animation-name: default-animation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.slideInOut {
+  animation-name: SlideInOut;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+}
+
+.logo-animation {
+  animation-name: logo-animation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.bgc-animation {
+  animation-name: bgc-animation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes default-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes section-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes SlideInOut {
+  0% {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(100%);
+  }
+}
+
+@keyframes logo-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bgc-animation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
