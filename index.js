@@ -1,4 +1,4 @@
-$(function () {
+$(window).on('load', function () {
   setTimeout(function () {
     $.scrollify({
       section: 'section',
@@ -24,7 +24,13 @@ $(function () {
   })
 })
 
+//ハンバーガーボタンクリックイベント
 $('.openbtn1').click(function () {
   $(this).toggleClass('active')
-  $('#fadeout').toggleClass('animation')
+  if ($('#menu').hasClass('d-n')) {
+    $('#menu').removeClass('d-n')
+    $('#menu').addClass('menu-fadein')
+  } else {
+    $('#menu').toggleClass('menu-fadein menu-fadeout')
+  }
 })

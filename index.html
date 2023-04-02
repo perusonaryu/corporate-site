@@ -10,20 +10,34 @@
     <link rel="stylesheet" href="css/original.css" />
   </head>
   <body class="overflow-hidden">
-    <header class="fixed top-0 h-[100px] w-full px-[40px] py-[10px] flex justify-between items-center bg-white z-10">
+    <header class="fixed top-0 h-[100px] w-full px-[40px] py-[10px] flex justify-between items-center bg-white z-50">
       <h1 class="section1 text-[14px] font-medium flex align-center cursor-pointer">
         <img src="./images/logo.png" alt="ロゴ" class="w-[70px] h-[70px]" />
       </h1>
       <div class="openbtn1 flex justify-center align-center"><span></span><span></span><span></span></div>
     </header>
+    <nav id="menu" class="fixed h-[0px] w-full bg-white z-40 d-n">
+      <div class="relative h-full w-full">
+        <ul class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+          <li class="mb-10"><a class="text-3xl" href="#">ARCHITECTURE</a></li>
+          <li class="mb-10"><a class="text-3xl" href="#">INTERIOR</a></li>
+          <li class="mb-10"><a class="text-3xl" href="#">WEBSITE</a></li>
+          <li class="mb-10"><a class="text-3xl" href="#">GRAPHIC</a></li>
+          <li class="mb-10"><a class="text-3xl" href="#">PRODUCT</a></li>
+          <li class="mb-10"><a class="text-3xl" href="#">ABOUT</a></li>
+          <li class="mb-10"><a class="text-3xl" href="#">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    <div id="white-back" class="absolute top-0 w-full h-screen bg-white z-20 bgc-animation animation-delay-3000"></div>
-    <div id="green-back" class="absolute top-0 w-full h-screen bg-[#95C0A2] z-20 slideInOut flex justify-center items-center opacity-0">
+    <div id="white-back" class="absolute top-0 w-full h-screen bg-white z-50 bgc-animation animation-delay-3000"></div>
+    <div id="green-back" class="absolute top-0 w-full h-screen bg-[#95C0A2] z-50 slideInOut flex justify-center items-center opacity-0">
       <img src="./images/logoicon.png" alt="ロゴアイコン" class="w-[100px] h-[100px] logo-animation [animation-delay:2.4s] opacity-0" />
     </div>
-    <main class="h-screen z-0 mx-4">
+
+    <main class="h-screen mx-4">
       <!-- 1ページ目 start -->
-      <section class="p-2 h-[calc(100vh_-_100px)] mt-[100px]">
+      <section class="p-2 h-[calc(100vh_-_100px)] mt-[100px] z-20">
         <ul id="top-list" class="top-list grid grid-cols-5 gap-5 h-full text-center">
           <li class="group cursor-pointer">
             <span class="flex items-center justify-center h-[30%] inline-block"> ARCHITECT </span>
@@ -120,6 +134,93 @@
         </div>
       </section>
       <!-- 3ページ目 end -->
+
+      <!-- 4ページ目 start -->
+      <section class="p-2 h-[100vh] relative">
+        <div class="pt-[100px] h-full w-full">
+          <div class="h-full w-full overflow-hidden relative bg-gray-300">
+            <img src="./images/section4/A.jpg" class="w-[70%] object-cover absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" />
+            <div class="section3 absolute w-[70px] h-[70px] top-[5%] left-[3%] cursor-pointer">
+              <div class="arrow-top"></div>
+              <div class="flex justify-center">
+                <p class="text-white text-center mt-[-20px] mx-auto">INTERIOR</p>
+              </div>
+            </div>
+            <div class="section5 absolute w-[70px] h-[70px] bottom-[5%] left-[3%] cursor-pointer">
+              <div class="arrow-bottom"></div>
+              <div class="flex justify-center">
+                <p class="text-white text-center mt-[-70px]">GRAPHIC</p>
+              </div>
+            </div>
+          </div>
+          <div class="absolute top-[20%] left-[15%] text-white tracking-[0.25em]">
+            <h3 class="text-2xl mb-3">WEBSITE</h3>
+            <div class="leading-5 text-[14px]">
+              <p>あいうえおかきくけさしすせそなにぬねのはひふへぼ</p>
+              <p>あいうえおかきくけさしすせそなにぬねのはひふへぼ</p>
+              <p>あいうえおかきくけさしすせそなにぬねのはひふへぼ</p>
+              <p>あいうえおかきくけさしすせそなにぬねのはひふへぼ</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 4ページ目 end -->
+
+      <!-- 5ページ目 start -->
+      <section class="p-2 h-[100vh] relative">
+        <div class="pt-[100px] h-full w-full">
+          <div class="h-full w-full overflow-hidden relative">
+            <img src="./images/section5/A.jpg" class="h-full w-full object-cover" />
+            <div class="section4 absolute w-[70px] h-[70px] top-[5%] left-[3%] cursor-pointer">
+              <div class="arrow-top"></div>
+              <div class="flex justify-center">
+                <p class="text-white text-center mt-[-20px] mx-auto">WEBSITE</p>
+              </div>
+            </div>
+            <div class="section6 absolute w-[70px] h-[70px] bottom-[5%] left-[3%] cursor-pointer">
+              <div class="arrow-bottom"></div>
+              <div class="flex justify-center">
+                <p class="text-white text-center mt-[-70px]">PRODUCT</p>
+              </div>
+            </div>
+          </div>
+          <div class="absolute top-[20%] left-[15%] text-white tracking-[0.25em]">
+            <h3 class="text-2xl mb-3">INTERIOR</h3>
+            <div class="leading-5 text-[14px]">
+              <p>あいうえおかきくけさしすせそなにぬねのはひふへぼ</p>
+              <p>あいうえおかきくけさしすせそなにぬねのはひふへぼ</p>
+              <p>あいうえおかきくけさしすせそなにぬねのはひふへぼ</p>
+              <p>あいうえおかきくけさしすせそなにぬねのはひふへぼ</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 5ページ目 end -->
+
+      <!-- 6ページ目 start -->
+      <section class="p-2 h-[100vh] relative">
+        <div class="pt-[100px] h-full w-full">
+          <div class="h-full w-full overflow-hidden relative">
+            <img src="./images/section6/A.jpg" class="h-full w-full object-cover" />
+            <div class="section5 absolute w-[70px] h-[70px] top-[5%] left-[3%] cursor-pointer">
+              <div class="arrow-top"></div>
+              <div class="flex justify-center">
+                <p class="text-white text-center mt-[-20px] mx-auto">INTERIOR</p>
+              </div>
+            </div>
+          </div>
+          <div class="absolute top-[20%] left-[15%] text-white tracking-[0.25em]">
+            <h3 class="text-2xl mb-3">INTERIOR</h3>
+            <div class="leading-5 text-[14px]">
+              <p>あいうえおかきくけさしすせそなにぬねのはひふへぼ</p>
+              <p>あいうえおかきくけさしすせそなにぬねのはひふへぼ</p>
+              <p>あいうえおかきくけさしすせそなにぬねのはひふへぼ</p>
+              <p>あいうえおかきくけさしすせそなにぬねのはひふへぼ</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 6ページ目 end -->
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>

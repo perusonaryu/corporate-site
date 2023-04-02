@@ -50,6 +50,30 @@
   animation-fill-mode: forwards;
 }
 
+.menu-fadein {
+  animation-name: menu-fadein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.menu-fadeout {
+  animation-name: menu-fadeout;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.menu-fadeout ul {
+  animation-name: menu-fadeout-ul;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.menu-fadeout ul li {
+  animation-name: menu-fadeout-ul-li;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
 @keyframes default-animation {
   0% {
     opacity: 0;
@@ -105,12 +129,59 @@
   }
 }
 
-@keyframes zoom-animation{
+@keyframes zoom-animation {
   0% {
     transform: scale(1);
   }
 
   100% {
     transform: scale(1.2);
+  }
+}
+
+@keyframes menu-fadein {
+  0% {
+    opacity: 0;
+    height: 0px;
+  }
+  1% {
+    height: 100vh;
+  }
+  100% {
+    opacity: 0.8;
+    height: 100vh;
+  }
+}
+
+@keyframes menu-fadeout {
+  0% {
+    opacity: 0.8;
+    height: 100vh;
+  }
+  99% {
+    height: 100vh;
+  }
+  100% {
+    height: 0px;
+    opacity: 0;
+  }
+}
+
+@keyframes menu-fadeout-ul {
+  100% {
+    height: 0px;
+  }
+}
+
+@keyframes menu-fadeout-ul-li {
+  0% {
+    margin-bottom: 40px;
+  }
+  99% {
+    margin-bottom: 40px;
+  }
+  100% {
+    height: 0px;
+    margin-bottom: 0px;
   }
 }
