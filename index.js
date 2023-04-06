@@ -1,5 +1,8 @@
 $(window).on('load', function () {
   setTimeout(function () {
+    $('#green-back').addClass('slideOut')
+  }, 5000)
+  setTimeout(function () {
     $.scrollify({
       section: 'section',
       scrollSpeed: 1500,
@@ -10,7 +13,7 @@ $(window).on('load', function () {
     $('#inianimation').addClass('d-n')
     $('#white-back').addClass('d-n')
     $('#green-back').addClass('d-n')
-  }, 6500)
+  }, 7500)
 
   //各セクション遷移のためのクリックイベント定義
   $('#top-list li').each(function (i, ele) {

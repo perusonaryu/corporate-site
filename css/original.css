@@ -26,15 +26,21 @@
   animation-fill-mode: forwards;
 }
 
-.slideInOut {
-  animation-name: SlideInOut;
-  animation-duration: 6s;
+.slideIn {
+  animation-name: SlideIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.slideOut {
+  animation-name: SlideOut;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
 .logo-animation {
   animation-name: logo-animation;
-  animation-duration: 1s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 
@@ -92,16 +98,19 @@
   }
 }
 
-@keyframes SlideInOut {
+@keyframes SlideIn {
   0% {
     opacity: 1;
     transform: translateY(-100%);
   }
-  40% {
+  100% {
     opacity: 1;
     transform: translateY(0%);
   }
-  60% {
+}
+
+@keyframes SlideOut {
+  0% {
     opacity: 1;
     transform: translateY(0%);
   }
