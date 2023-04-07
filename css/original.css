@@ -74,12 +74,6 @@
   animation-fill-mode: forwards;
 }
 
-.menu-fadeout ul li {
-  animation-name: menu-fadeout-ul-li;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
 @keyframes default-animation {
   0% {
     opacity: 0;
@@ -177,20 +171,13 @@
 }
 
 @keyframes menu-fadeout-ul {
-  100% {
-    height: 0px;
-  }
-}
-
-@keyframes menu-fadeout-ul-li {
   0% {
-    margin-bottom: 40px;
+    height: auto;
   }
   99% {
-    margin-bottom: 40px;
+    height: auto;
   }
   100% {
     height: 0px;
-    margin-bottom: 0px;
   }
 }
