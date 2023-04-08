@@ -74,6 +74,18 @@
   animation-fill-mode: forwards;
 }
 
+.section-description{
+  background-color: rgba(20, 20, 20, 0.7);
+  transition: all 1s;
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.section-description.close{
+  transform: translateX(100%);
+  opacity: 0;
+}
+
 @keyframes default-animation {
   0% {
     opacity: 0;

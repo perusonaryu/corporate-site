@@ -545,12 +545,20 @@ html {
   left: 50%;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .top-0 {
   top: 0px;
 }
 
 .top-\[20\%\] {
   top: 20%;
+}
+
+.top-\[40\%\] {
+  top: 40%;
 }
 
 .top-\[5\%\] {
@@ -561,28 +569,8 @@ html {
   top: 50%;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
-.bottom-\[\] {
-  bottom: ;
-}
-
-.bottom-\[1--px\] {
-  bottom: 1--px;
-}
-
-.bottom-\[1px\] {
-  bottom: 1px;
-}
-
-.bottom-\[10px\] {
-  bottom: 10px;
-}
-
-.top-\[40\%\] {
-  top: 40%;
+.z-10 {
+  z-index: 10;
 }
 
 .z-20 {
@@ -597,12 +585,16 @@ html {
   z-index: 50;
 }
 
-.m-auto {
-  margin: auto;
+.z-\[5\] {
+  z-index: 5;
 }
 
-.m-4 {
-  margin: 1rem;
+.m-3 {
+  margin: 0.75rem;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mx-4 {
@@ -635,14 +627,6 @@ html {
   margin-top: -70px;
 }
 
-.mt-\[100px\] {
-  margin-top: 100px;
-}
-
-.mt-\[200px\] {
-  margin-top: 200px;
-}
-
 .mt-\[150px\] {
   margin-top: 150px;
 }
@@ -663,28 +647,36 @@ html {
   height: 0px;
 }
 
-.h-\[100px\] {
-  height: 100px;
-}
-
 .h-\[100vh\] {
   height: 100vh;
 }
 
-.h-\[30\%\] {
-  height: 30%;
+.h-\[150px\] {
+  height: 150px;
 }
 
-.h-\[70\%\] {
-  height: 70%;
+.h-\[20\%\] {
+  height: 20%;
+}
+
+.h-\[200px\] {
+  height: 200px;
 }
 
 .h-\[70px\] {
   height: 70px;
 }
 
-.h-\[calc\(100vh_-_100px\)\] {
-  height: calc(100vh - 100px);
+.h-\[80\%\] {
+  height: 80%;
+}
+
+.h-\[85\%\] {
+  height: 85%;
+}
+
+.h-\[calc\(100vh_-_150px\)\] {
+  height: calc(100vh - 150px);
 }
 
 .h-full {
@@ -695,56 +687,12 @@ html {
   height: 100vh;
 }
 
-.h-\[200px\] {
-  height: 200px;
-}
-
-.h-\[20\%\] {
-  height: 20%;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[15\%\] {
-  height: 15%;
-}
-
-.h-\[80\%\] {
-  height: 80%;
-}
-
-.h-\[80\] {
-  height: 80;
-}
-
-.h-\[8\%0\] {
-  height: 8%0;
-}
-
-.h-\[85\%\] {
-  height: 85%;
-}
-
-.h-\[90\%\] {
-  height: 90%;
-}
-
-.h-\[150px\] {
-  height: 150px;
-}
-
-.h-\[calc\(100vh_-_150px\)\] {
-  height: calc(100vh - 150px);
-}
-
 .w-6\/12 {
   width: 50%;
 }
 
-.w-\[100px\] {
-  width: 100px;
+.w-\[200px\] {
+  width: 200px;
 }
 
 .w-\[250px\] {
@@ -755,8 +703,12 @@ html {
   width: 35%;
 }
 
-.w-\[70\%\] {
-  width: 70%;
+.w-\[45\%\] {
+  width: 45%;
+}
+
+.w-\[60\%\] {
+  width: 60%;
 }
 
 .w-\[70px\] {
@@ -767,18 +719,6 @@ html {
   width: 100%;
 }
 
-.w-\[\] {
-  width: ;
-}
-
-.w-\[2\] {
-  width: 2;
-}
-
-.w-\[200px\] {
-  width: 200px;
-}
-
 .translate-x-\[-50\%\] {
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -786,18 +726,6 @@ html {
 
 .translate-y-\[-50\%\] {
   --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.scale-125 {
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.scale-100 {
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -858,8 +786,9 @@ html {
      object-fit: cover;
 }
 
-.p-2 {
-  padding: 0.5rem;
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .px-\[40px\] {
@@ -872,16 +801,16 @@ html {
   padding-bottom: 10px;
 }
 
-.pt-\[100px\] {
-  padding-top: 100px;
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .pt-\[150px\] {
   padding-top: 150px;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
+.pt-\[70px\] {
+  padding-top: 70px;
 }
 
 .text-center {
@@ -931,8 +860,12 @@ html {
   opacity: 0;
 }
 
-.duration-300 {
-  transition-duration: 300ms;
+.opacity-40 {
+  opacity: 0.4;
+}
+
+.opacity-60 {
+  opacity: 0.6;
 }
 
 .duration-700 {
@@ -941,10 +874,6 @@ html {
 
 .animation-delay-3000 {
   animation-delay: 3000ms;
-}
-
-.\[animation-delay\:2\.4s\] {
-  animation-delay: 2.4s;
 }
 
 .\[animation-delay\:2\.0s\] {
@@ -959,18 +888,6 @@ html {
 
 .group:hover .group-hover\:opacity-60 {
   opacity: 0.6;
-}
-
-.group:hover .group-hover\:opacity-70 {
-  opacity: 0.7;
-}
-
-.group:hover .group-hover\:duration-300 {
-  transition-duration: 300ms;
-}
-
-.group:hover .group-hover\:duration-1000 {
-  transition-duration: 1000ms;
 }
 
 .group:hover .group-hover\:duration-700 {

@@ -1,4 +1,7 @@
+const startTime = performance.now()
 $(window).on('load', function () {
+  const endTime = performance.now()
+  console.log(endTime - startTime)
   setTimeout(function () {
     $('#green-back').addClass('slideOut')
   }, 5000)
@@ -25,4 +28,10 @@ $(window).on('load', function () {
       $.scrollify.move(i)
     })
   })
+})
+
+//section2~6の詳細テキスト表示、非表示クリックイベント
+$('.description-btn').click(function () {
+  $(this).toggleClass('active')
+  $(this).parent().siblings('.section-description').toggleClass('open close')
 })
