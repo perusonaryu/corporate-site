@@ -533,10 +533,6 @@ html {
   bottom: 5%;
 }
 
-.left-\[15\%\] {
-  left: 15%;
-}
-
 .left-\[3\%\] {
   left: 3%;
 }
@@ -551,10 +547,6 @@ html {
 
 .top-0 {
   top: 0px;
-}
-
-.top-\[20\%\] {
-  top: 20%;
 }
 
 .top-\[40\%\] {
@@ -697,10 +689,6 @@ html {
 
 .w-\[250px\] {
   width: 250px;
-}
-
-.w-\[35\%\] {
-  width: 35%;
 }
 
 .w-\[45\%\] {
@@ -858,14 +846,6 @@ html {
 
 .opacity-0 {
   opacity: 0;
-}
-
-.opacity-40 {
-  opacity: 0.4;
-}
-
-.opacity-60 {
-  opacity: 0.6;
 }
 
 .duration-700 {
