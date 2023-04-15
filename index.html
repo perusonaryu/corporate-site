@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/btn.css?ver=1.0.0" />
     <link rel="stylesheet" href="css/original.css?ver=1.0.0" />
   </head>
-  <body class="overflow-hidden">
-    <header class="fixed top-0 h-[150px] w-full px-[40px] py-[10px] flex justify-between items-center bg-white z-50">
+  <body class="overflow-hidden bg-[#A4B0AB]">
+    <header class="fixed bg-[#A4B0AB] top-0 h-[150px] w-full px-[50px] py-[10px] flex justify-between items-center z-50">
       <h1 class="section1 text-[14px] font-medium flex align-center cursor-pointer">
         <a href="./index.html">
           <img src="./images/logo.png" alt="ロゴ" class="w-[250px] object-cover" />
@@ -34,17 +34,19 @@
 
     <!-- オープニングアニメーション用 -->
     <div id="white-back" class="absolute top-0 w-full h-screen bg-white z-50 bgc-animation animation-delay-3000"></div>
-    <div id="green-back" class="absolute top-0 w-full h-screen bg-[#95C0A2] z-50 slideIn flex justify-center items-center opacity-0">
+    <div id="green-back" class="absolute top-0 w-full h-screen bg-[#A4B0AB] z-50 slideIn flex justify-center items-center opacity-0">
       <img id="opening-logo" src="./images/logoicon.png" alt="ロゴアイコン" class="w-[200px] h-[200px] logo-animation [animation-delay:2.0s] opacity-0" />
     </div>
 
-    <main class="h-screen mx-4">
+    <main class="h-screen mx-5">
       <!-- 1ページ目 start -->
-      <section class="pb-4 h-[calc(100vh_-_150px)] mt-[150px] z-20">
-        <ul id="top-list" class="top-list grid grid-cols-5 gap-5 h-full text-center relative">
+      <section class="pb-5 h-[calc(100vh_-_150px)] mt-[150px] z-20">
+        <ul id="top-list" class="top-list grid grid-cols-5 gap-5 h-full text-center text-white relative">
           <li class="flex items-end">
             <div class="group cursor-pointer h-[85%] w-full">
-              <span class="flex items-center justify-center h-[20%] inline-block"> ARCHITECT </span>
+              <h3 class="flex justify-center h-[20%] inline-block relative">
+                <span class="absolute bottom-[45px]"> ARCHITECT </span>
+              </h3>
               <div class="w-full h-[80%] bg-black overflow-hidden">
                 <img class="w-full h-full object-cover group-hover:opacity-60 group-hover:scale-125 group-hover:duration-700 duration-700" src="./images/section1/ARCHTECT.png" alt="" />
               </div>
@@ -52,7 +54,9 @@
           </li>
           <li class="flex items-end">
             <div class="group cursor-pointer h-[85%] w-full">
-              <span class="flex items-center justify-center h-[20%] inline-block"> INTERIOR </span>
+              <h3 class="flex justify-center h-[20%] inline-block relative">
+                <span class="absolute bottom-[45px]"> INTERIOR </span>
+              </h3>
               <div class="w-full h-[80%] bg-black overflow-hidden">
                 <img class="w-full h-full object-cover group-hover:opacity-60 group-hover:scale-125 group-hover:duration-700 duration-700" src="./images/section1/INTERIOR.png" alt="" />
               </div>
@@ -60,7 +64,9 @@
           </li>
           <li class="flex items-end">
             <div class="group cursor-pointer h-[85%] w-full">
-              <span class="flex items-center justify-center h-[20%] inline-block"> WEBSITE </span>
+              <h3 class="flex justify-center h-[20%] inline-block relative">
+                <span class="absolute bottom-[45px]"> WEBSITE </span>
+              </h3>
               <div class="w-full h-[80%] bg-black overflow-hidden">
                 <img class="w-full h-full object-cover group-hover:opacity-60 group-hover:scale-125 group-hover:duration-700 duration-700" src="./images/section1/WEBSITE.png" alt="" />
               </div>
@@ -68,7 +74,9 @@
           </li>
           <li class="flex items-end">
             <div class="group cursor-pointer h-[85%] w-full">
-              <span class="flex items-center justify-center h-[20%] inline-block"> GRAPHIC </span>
+              <h3 class="flex justify-center h-[20%] inline-block relative">
+                <span class="absolute bottom-[45px]"> GRAPHIC </span>
+              </h3>
               <div class="w-full h-[80%] bg-black overflow-hidden">
                 <img class="w-full h-full object-cover group-hover:opacity-60 group-hover:scale-125 group-hover:duration-700 duration-700" src="./images/section1/GRAPHIC.png" alt="" />
               </div>
@@ -76,7 +84,9 @@
           </li>
           <li class="flex items-end">
             <div class="group cursor-pointer h-[85%] w-full">
-              <span class="flex items-center justify-center h-[20%] inline-block"> PRODUCT </span>
+              <h3 class="flex justify-center h-[20%] inline-block relative">
+                <span class="absolute bottom-[45px]"> PRODUCT </span>
+              </h3>
               <div class="w-full h-[80%] bg-black overflow-hidden">
                 <img class="w-full h-full object-cover group-hover:opacity-60 group-hover:scale-125 group-hover:duration-700 duration-700" src="./images/section1/PRODUCT.png" alt="" />
               </div>
@@ -87,7 +97,7 @@
       <!-- 1ページ目 end -->
 
       <!-- 2ページ目 start -->
-      <section class="pb-4 h-[100vh] relative">
+      <section class="pb-5 h-[100vh] relative">
         <div class="pt-[150px] h-full w-full">
           <div class="h-full w-full overflow-hidden relative">
             <div class="absolute top-0 right-0 z-10 m-3">
@@ -122,7 +132,7 @@
       <!-- 2ページ目 end -->
 
       <!-- 3ページ目 start -->
-      <section class="pb-4 h-[100vh] relative">
+      <section class="pb-5 h-[100vh] relative">
         <div class="pt-[150px] h-full w-full">
           <div class="h-full w-full overflow-hidden relative">
             <div class="absolute top-0 right-0 z-10 m-3">
@@ -157,7 +167,7 @@
       <!-- 3ページ目 end -->
 
       <!-- 4ページ目 start -->
-      <section class="pb-4 h-[100vh] relative">
+      <section class="pb-5 h-[100vh] relative">
         <div class="pt-[150px] h-full w-full">
           <div class="h-full w-full overflow-hidden relative bg-gray-300">
             <div class="absolute top-0 right-0 z-10 m-3">
@@ -191,7 +201,7 @@
       <!-- 4ページ目 end -->
 
       <!-- 5ページ目 start -->
-      <section class="pb-4 h-[100vh] relative">
+      <section class="pb-5 h-[100vh] relative">
         <div class="pt-[150px] h-full w-full">
           <div class="h-full w-full overflow-hidden relative">
             <div class="absolute top-0 right-0 z-10 m-3">
@@ -226,7 +236,7 @@
       <!-- 5ページ目 end -->
 
       <!-- 6ページ目 start -->
-      <section class="pb-4 h-[100vh] relative">
+      <section class="pb-5 h-[100vh] relative">
         <div class="pt-[150px] h-full w-full">
           <div class="h-full w-full overflow-hidden relative">
             <div class="absolute top-0 right-0 z-10 m-3">
