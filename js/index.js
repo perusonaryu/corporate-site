@@ -31,7 +31,6 @@ $(window).on('load', function () {
 })
 
 //section2~6の詳細テキスト表示、非表示クリックイベント
-$('.description-btn').click(function () {
-  $(this).toggleClass('active')
-  $(this).parent().siblings('.section-description').toggleClass('open close')
+$('.description-btn').on('click', function () {
+  $(this).toggleClass('active').parent().siblings('.section-description').toggleClass('open close')
 })
