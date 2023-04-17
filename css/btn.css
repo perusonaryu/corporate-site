@@ -1,8 +1,8 @@
 .openbtn1 {
   position: relative; /*ボタン内側の基点となるためrelativeを指定*/
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 28px;
 }
 
 /*ボタン内側*/
@@ -10,31 +10,29 @@
   display: inline-block;
   transition: all 0.4s; /*アニメーションの設定*/
   position: absolute;
-  /* left: 14px; */
   height: 1px;
   border-radius: 2px;
-  background: #fff;
-  width: 30px;
+  width: 35px;
 }
 
 .openbtn1 span:nth-of-type(1) {
-  top: 10px;
+  top: 0px;
 }
 
 .openbtn1 span:nth-of-type(2) {
-  top: 20px;
+  top: 14px;
 }
 
 .openbtn1 span:nth-of-type(3) {
-  top: 30px;
+  top: 28px;
 }
 
 /*activeクラスが付与されると線が回転して×に*/
 
 .openbtn1.active span:nth-of-type(1) {
-  top: 18px;
-  transform: translateY(6px) rotate(-45deg);
-  width: 30px;
+  top: 14px;
+  transform: translateY(0px) rotate(-45deg);
+  width: 35px;
 }
 
 .openbtn1.active span:nth-of-type(2) {
@@ -42,9 +40,9 @@
 }
 
 .openbtn1.active span:nth-of-type(3) {
-  top: 30px;
-  transform: translateY(-6px) rotate(45deg);
-  width: 30px;
+  top: 14px;
+  transform: translateY(0px) rotate(45deg);
+  width: 35px;
 }
 
 .description-btn {
@@ -59,7 +57,6 @@
   position: absolute;
   display: inline-block;
   transition: all 1s; /*アニメーションの設定*/
-  /* left: 14px; */
   height: 1px;
   border-radius: 2px;
   background: #fff;
