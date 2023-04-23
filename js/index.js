@@ -1,17 +1,45 @@
-const startTime = performance.now()
+$(function () {
+  $('html,body').scrollTop(0)
+  $('.slide-items').slick({
+    arrows: false, // 矢印
+    dots: true, // インジケーター
+  })
+})
 $(window).on('load', function () {
-  const endTime = performance.now()
-  console.log(endTime - startTime)
   setTimeout(function () {
     $('#green-back').addClass('slideOut')
   }, 5000)
   setTimeout(function () {
+    //scrollify設定
     $.scrollify({
       section: 'section',
       scrollSpeed: 1500,
       easing: 'swing',
       updateHash: false,
       setHeights: false,
+      after: (i, section) => {
+        const nextSecDesEle = $.scrollify.current().children().children().find('.section-description')
+        const desBtnEle = $.scrollify.current().children().children().find('.description-btn')
+        const isClose = nextSecDesEle.hasClass('close')
+        const isDone = nextSecDesEle.hasClass('done')
+        if (isClose && !isDone) {
+          console.log('aaa')
+          nextSecDesEle.removeClass('close')
+          nextSecDesEle.addClass('done')
+          desBtnEle.addClass('show')
+        }
+        console.log(i)
+        if (i == 0) {
+          $('#arrow-top').removeClass('active')
+          $('#arrow-bottom').removeClass('active')
+        } else if (i == 5) {
+          $('#arrow-top').addClass('active')
+          $('#arrow-bottom').removeClass('active')
+        } else {
+          $('#arrow-top').addClass('active')
+          $('#arrow-bottom').addClass('active')
+        }
+      },
     })
     $('#inianimation').addClass('d-n')
     $('#white-back').addClass('d-n')
@@ -19,11 +47,7 @@ $(window).on('load', function () {
   }, 7500)
 
   //各セクション遷移のためのクリックイベント定義
-  $('#top-list li').each(function (i, ele) {
-    $(this).click(function () {
-      $.scrollify.move(i + 1)
-    })
-
+  $('section').each(function (i) {
     $('.section' + (i + 1)).click(function () {
       $.scrollify.move(i)
     })
@@ -32,5 +56,5 @@ $(window).on('load', function () {
 
 //section2~6の詳細テキスト表示、非表示クリックイベント
 $('.description-btn').on('click', function () {
-  $(this).toggleClass('active').parent().siblings('.section-description').toggleClass('open close')
+  $(this).toggleClass('active').parent().siblings('.section-description').toggleClass('close')
 })

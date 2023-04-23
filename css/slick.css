@@ -1,33 +1,31 @@
-.slick-list {
-  height: 100%;
-}
-
-.slick-arrow {
+.slick-dots {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  cursor: pointer;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.slick-prev {
-  color: white;
-  left: 0;
+.slick-dots li {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin: 0 15px;
+  width: 15px;
+  height: 15px;
 }
 
-.slick-next {
-  color: white;
-  right: 0px;
+.slick-dots li button {
+  position: relative;
+  text-indent: -9999px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
-.arrow-svg {
-  fill: white;
-}
-
-.arrow-prev {
-  left: 0;
-}
-
-.arrow-next {
-  right: 0;
+.slick-dots .slick-active button {
+  background-color: #fff;
 }

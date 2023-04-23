@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CACTUS design</title>
-    <link rel="stylesheet" href="css/dist.css?ver=1.0.0" />
-    <link rel="stylesheet" href="css/btn.css?ver=1.0.0" />
-    <link rel="stylesheet" href="css/original.css?ver=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/dist.css?ver=1.0.0" />
+    <link rel="stylesheet" href="./css/btn.css?ver=1.0.0" />
+    <link rel="stylesheet" href="./css/original.css?ver=1.0.0" />
+    <link rel="stylesheet" href="./css/slick.css" />
   </head>
   <body class="overflow-hidden bg-[#A4B0AB]">
     <header class="fixed bg-[#A4B0AB] top-0 h-[140px] w-full px-[50px] flex justify-between items-center z-50">
@@ -38,11 +40,19 @@
       <img id="opening-logo" src="./images/logoicon.png" alt="ロゴアイコン" class="w-[200px] h-[200px] logo-animation [animation-delay:2.0s] opacity-0" />
     </div>
 
-    <main class="h-screen mx-5">
+    <main class="w-full relative px-5">
+      <div class="pb-5 h-[calc(100vh_-_140px)] w-[70px] z-30 fixed left-[70px]">
+        <div class="absolute w-[70px] h-[70px] top-[5%]">
+          <div id="arrow-top" class="arrow-top"></div>
+        </div>
+        <div class="absolute w-[70px] h-[70px] bottom-[7%]">
+          <div id="arrow-bottom" class="arrow-bottom"></div>
+        </div>
+      </div>
       <!-- 1ページ目 start -->
       <section class="pb-5 h-[calc(100vh_-_140px)] mt-[140px] z-20">
         <ul id="top-list" class="top-list grid grid-cols-5 gap-5 h-full text-center text-white relative">
-          <li class="flex items-end">
+          <li class="flex items-end section2">
             <div class="group cursor-pointer h-[85%] w-full">
               <h3 class="flex justify-center h-[20%] inline-block relative">
                 <span class="absolute bottom-[45px] tracking-[2.4px]"> ARCHITECTURE </span>
@@ -56,7 +66,7 @@
               </div>
             </div>
           </li>
-          <li class="flex items-end">
+          <li class="flex items-end section3">
             <div class="group cursor-pointer h-[85%] w-full">
               <h3 class="flex justify-center h-[20%] inline-block relative">
                 <span class="absolute bottom-[45px] tracking-[2.4px]"> INTERIOR </span>
@@ -70,7 +80,7 @@
               </div>
             </div>
           </li>
-          <li class="flex items-end">
+          <li class="flex items-end section4">
             <div class="group cursor-pointer h-[85%] w-full">
               <h3 class="flex justify-center h-[20%] inline-block relative">
                 <span class="absolute bottom-[45px] tracking-[2.4px]"> WEBSITE </span>
@@ -84,7 +94,7 @@
               </div>
             </div>
           </li>
-          <li class="flex items-end">
+          <li class="flex items-end section5">
             <div class="group cursor-pointer h-[85%] w-full">
               <h3 class="flex justify-center h-[20%] inline-block relative">
                 <span class="absolute bottom-[45px] tracking-[2.4px]"> GRAPHIC </span>
@@ -98,7 +108,7 @@
               </div>
             </div>
           </li>
-          <li class="flex items-end">
+          <li class="flex items-end section6">
             <div class="group cursor-pointer h-[85%] w-full">
               <h3 class="flex justify-center h-[20%] inline-block relative">
                 <span class="absolute bottom-[45px] tracking-[2.4px]"> PRODUCT </span>
@@ -123,7 +133,7 @@
             <div class="absolute top-[25px] right-[25px] z-10 m-3">
               <div class="description-btn active"><span></span><span></span></div>
             </div>
-            <div class="section-description flex flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-5 absolute right-0 text-white tracking-[0.25em] z-[5]">
+            <div class="section-description close flex flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-5 absolute right-0 text-white tracking-[0.25em] z-[5]">
               <h3 class="text-[21px] mb-3 tracking-[4.2px] font-bold">ARCHITECTURE</h3>
               <h4 class="text-lg mt-[38px] tracking-[7.2px]">幸せな暮らしをご提供</h4>
 
@@ -133,17 +143,19 @@
                 </p>
               </div>
             </div>
-            <img src="./images/section2/A.jpg" class="h-full w-full object-cover" />
-            <div class="section1 absolute w-[70px] h-[70px] top-[5%] left-[3%] cursor-pointer">
-              <div class="arrow-top"></div>
-              <div class="flex justify-center">
-                <p class="text-white text-center mt-[-20px]">TOP</p>
+            <ul class="slide-items h-full w-full relative">
+              <li><img class="h-full w-full object-cover" src="./images/section2/A.jpg" alt="ARCHITECTURE1" /></li>
+              <li><img class="h-full w-full object-cover" src="./images/section2/B.JPG" alt="ARCHITECTURE2" /></li>
+              <li><img class="h-full w-full object-cover" src="./images/section2/C.JPG" alt="ARCHITECTURE3" /></li>
+            </ul>
+            <div class="section1 absolute w-[100px] h-[90px] top-[3%] left-[35px] cursor-pointer z-40">
+              <div class="flex justify-center h-full items-end">
+                <p class="text-white text-center">TOP</p>
               </div>
             </div>
-            <div class="section3 absolute w-[70px] h-[70px] bottom-[5%] left-[3%] cursor-pointer">
-              <div class="arrow-bottom"></div>
-              <div class="flex justify-center">
-                <p class="text-white text-center mt-[-70px] m-auto">INTERIOR</p>
+            <div class="section3 absolute w-[100px] h-[90px] bottom-[3%] left-[35px] cursor-pointer z-40">
+              <div class="flex justify-center h-full items-start">
+                <p class="text-white text-center">INTERIOR</p>
               </div>
             </div>
           </div>
@@ -158,7 +170,7 @@
             <div class="absolute top-[25px] right-[25px] z-10 m-3">
               <div class="description-btn active"><span></span><span></span></div>
             </div>
-            <div class="section-description flex flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-5 absolute right-0 text-white tracking-[0.25em] z-[5]">
+            <div class="section-description close flex flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-5 absolute right-0 text-white tracking-[0.25em] z-[5]">
               <h3 class="text-[21px] mb-3 tracking-[4.2px] font-bold">INTERIOR</h3>
               <h4 class="text-lg mt-[38px] tracking-[7.2px]">住宅、店舗、ホテル、ショールーム</h4>
 
@@ -168,17 +180,20 @@
                 </p>
               </div>
             </div>
-            <img src="./images/section3/A.jpg" class="h-full w-full object-cover" />
-            <div class="section2 absolute w-[70px] h-[70px] top-[5%] left-[3%] cursor-pointer">
-              <div class="arrow-top"></div>
-              <div class="flex justify-center">
-                <p class="text-white text-center mt-[-20px] mx-auto">ARCHITECTURE</p>
+            <ul class="slide-items h-full w-full relative">
+              <li><img class="h-full w-full object-cover" src="./images/section3/A.jpg" alt="INTERIOR1" /></li>
+              <li><img class="h-full w-full object-cover" src="./images/section3/B.JPG" alt="INTERIOR2" /></li>
+              <li><img class="h-full w-full object-cover" src="./images/section3/C.JPG" alt="INTERIOR3" /></li>
+              <li><img class="h-full w-full object-cover" src="./images/section3/D.JPG" alt="INTERIOR4" /></li>
+            </ul>
+            <div class="section2 absolute w-[100px] h-[90px] top-[3%] left-[35px] cursor-pointer z-40">
+              <div class="flex justify-center h-full items-end">
+                <p class="text-white text-center">ARCHITECTURE</p>
               </div>
             </div>
-            <div class="section4 absolute w-[70px] h-[70px] bottom-[5%] left-[3%] cursor-pointer">
-              <div class="arrow-bottom"></div>
-              <div class="flex justify-center">
-                <p class="text-white text-center mt-[-70px]">WEBSITE</p>
+            <div class="section4 absolute w-[100px] h-[90px] bottom-[3%] left-[35px] cursor-pointer z-40">
+              <div class="flex justify-center h-full items-start">
+                <p class="text-white text-center">WEBSITE</p>
               </div>
             </div>
           </div>
@@ -193,7 +208,7 @@
             <div class="absolute top-[25px] right-[25px] z-10 m-3">
               <div class="description-btn active"><span></span><span></span></div>
             </div>
-            <div class="section-description flex flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-5 absolute right-0 text-white tracking-[0.25em] z-[5]">
+            <div class="section-description close flex flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-5 absolute right-0 text-white tracking-[0.25em] z-[5]">
               <h3 class="text-[21px] mb-3 tracking-[4.2px] font-bold">WEBSITE</h3>
               <h4 class="text-lg mt-[38px] tracking-[7.2px]">集客力向上を目指す</h4>
 
@@ -204,17 +219,21 @@
                 </p>
               </div>
             </div>
-            <img src="./images/section4/A.jpg" class="w-[60%] object-cover absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" />
-            <div class="section3 absolute w-[70px] h-[70px] top-[5%] left-[3%] cursor-pointer">
-              <div class="arrow-top"></div>
-              <div class="flex justify-center">
-                <p class="text-white text-center mt-[-20px] mx-auto">INTERIOR</p>
+            <ul class="slide-items h-full w-full relative">
+              <li><img class="h-full w-full object-cover" src="./images/section4/A.jpg" alt="WEBSITE1" /></li>
+              <li><img class="h-full w-full object-cover" src="./images/section4/B.jpg" alt="WEBSITE2" /></li>
+              <li><img class="h-full w-full object-cover" src="./images/section4/C.jpg" alt="WEBSITE3" /></li>
+              <li><img class="h-full w-full object-cover" src="./images/section4/D.jpg" alt="WEBSITE4" /></li>
+              <li><img class="h-full w-full object-cover" src="./images/section4/E.jpg" alt="WEBSITE5" /></li>
+            </ul>
+            <div class="section3 absolute w-[100px] h-[90px] top-[3%] left-[35px] cursor-pointer z-40">
+              <div class="flex justify-center h-full items-end">
+                <p class="text-white text-center">INTERIOR</p>
               </div>
             </div>
-            <div class="section5 absolute w-[70px] h-[70px] bottom-[5%] left-[3%] cursor-pointer">
-              <div class="arrow-bottom"></div>
-              <div class="flex justify-center">
-                <p class="text-white text-center mt-[-70px]">GRAPHIC</p>
+            <div class="section5 absolute w-[100px] h-[90px] bottom-[3%] left-[35px] cursor-pointer z-40">
+              <div class="flex justify-center h-full items-start">
+                <p class="text-white text-center">GRAPHIC</p>
               </div>
             </div>
           </div>
@@ -229,7 +248,7 @@
             <div class="absolute top-[25px] right-[25px] z-10 m-3">
               <div class="description-btn active"><span></span><span></span></div>
             </div>
-            <div class="section-description flex flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-5 absolute right-0 text-white tracking-[0.25em] z-[5]">
+            <div class="section-description close flex flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-5 absolute right-0 text-white tracking-[0.25em] z-[5]">
               <h3 class="text-[21px] mb-3 tracking-[4.2px] font-bold">GRAPHIC</h3>
               <h4 class="text-lg mt-[38px] tracking-[7.2px]">ブランディング、名刺、カタログ、写真</h4>
 
@@ -239,17 +258,21 @@
                 </p>
               </div>
             </div>
-            <img src="./images/section5/A.jpg" class="h-full w-full object-cover" />
-            <div class="section4 absolute w-[70px] h-[70px] top-[5%] left-[3%] cursor-pointer">
-              <div class="arrow-top"></div>
-              <div class="flex justify-center">
-                <p class="text-white text-center mt-[-20px] mx-auto">WEBSITE</p>
+            <ul class="slide-items h-full w-full relative">
+              <li><img class="h-full w-full object-cover" src="./images/section5/A.jpg" alt="GRAPHIC1" /></li>
+              <li><img class="h-full w-full object-cover" src="./images/section5/B.jpg" alt="GRAPHIC2" /></li>
+              <li><img class="h-full w-full object-cover" src="./images/section5/C.jpg" alt="GRAPHIC3" /></li>
+              <li><img class="h-full w-full object-cover" src="./images/section5/D.jpg" alt="GRAPHIC4" /></li>
+              <li><img class="h-full w-full object-cover" src="./images/section5/E.jpg" alt="GRAPHIC5" /></li>
+            </ul>
+            <div class="section4 absolute w-[100px] h-[90px] top-[3%] left-[35px] cursor-pointer z-40">
+              <div class="flex justify-center h-full items-end">
+                <p class="text-white text-center">WEBSITE</p>
               </div>
             </div>
-            <div class="section6 absolute w-[70px] h-[70px] bottom-[5%] left-[3%] cursor-pointer">
-              <div class="arrow-bottom"></div>
-              <div class="flex justify-center">
-                <p class="text-white text-center mt-[-70px]">PRODUCT</p>
+            <div class="section6 absolute w-[100px] h-[90px] bottom-[3%] left-[35px] cursor-pointer z-40">
+              <div class="flex justify-center h-full items-start">
+                <p class="text-white text-center">PRODUCT</p>
               </div>
             </div>
           </div>
@@ -264,7 +287,7 @@
             <div class="absolute top-[25px] right-[25px] z-10 m-3">
               <div class="description-btn active"><span></span><span></span></div>
             </div>
-            <div class="section-description flex flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-5 absolute right-0 text-white tracking-[0.25em] z-[5]">
+            <div class="section-description close flex flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-5 absolute right-0 text-white tracking-[0.25em] z-[5]">
               <h3 class="text-[21px] mb-3 tracking-[4.2px] font-bold">PRODUCT</h3>
               <h4 class="text-lg mt-[38px] tracking-[7.2px]">競争力のある商品開発</h4>
 
@@ -274,11 +297,16 @@
                 </p>
               </div>
             </div>
-            <img src="./images/section6/A.JPG" class="h-full w-full object-cover" />
-            <div class="section5 absolute w-[70px] h-[70px] top-[5%] left-[3%] cursor-pointer">
-              <div class="arrow-top"></div>
-              <div class="flex justify-center">
-                <p class="text-white text-center mt-[-20px] mx-auto">INTERIOR</p>
+            <ul class="slide-items h-full w-full relative">
+              <li><img class="h-full w-full object-cover" src="./images/section6/A.JPG" alt="PRODUCT1" /></li>
+              <li><img class="h-full w-full object-cover" src="./images/section6/B.JPG" alt="PRODUCT2" /></li>
+              <li><img class="h-full w-full object-cover" src="./images/section6/C.jpg" alt="PRODUCT3" /></li>
+              <li><img class="h-full w-full object-cover" src="./images/section6/D.JPG" alt="PRODUCT4" /></li>
+              <li><img class="h-full w-full object-cover" src="./images/section6/E.JPG" alt="PRODUCT5" /></li>
+            </ul>
+            <div class="section5 absolute w-[100px] h-[90px] top-[3%] left-[35px] cursor-pointer z-40">
+              <div class="flex justify-center h-full items-end">
+                <p class="text-white text-center">WEBSITE</p>
               </div>
             </div>
           </div>
@@ -288,6 +316,7 @@
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
       integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
