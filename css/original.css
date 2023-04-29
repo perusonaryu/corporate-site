@@ -30,6 +30,14 @@
   opacity: 1;
 }
 
+.move-btn{
+  transition: all 2s;
+  opacity: 0;
+}
+.move-btn.active{
+  opacity: 1;
+}
+
 /* アニメーション */
 .section-animation {
   opacity: 0;

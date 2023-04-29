@@ -18,24 +18,26 @@ $(window).on('load', function () {
       updateHash: false,
       setHeights: false,
       after: (i, section) => {
+        const ele = $.scrollify.current().find('.move-btn')
         const nextSecDesEle = $.scrollify.current().children().children().find('.section-description')
         const desBtnEle = $.scrollify.current().children().children().find('.description-btn')
         const isClose = nextSecDesEle.hasClass('close')
         const isDone = nextSecDesEle.hasClass('done')
         if (isClose && !isDone) {
-          console.log('aaa')
           nextSecDesEle.removeClass('close')
           nextSecDesEle.addClass('done')
           desBtnEle.addClass('show')
         }
-        console.log(i)
+
         if (i == 0) {
           $('#arrow-top').removeClass('active')
           $('#arrow-bottom').removeClass('active')
         } else if (i == 5) {
           $('#arrow-top').addClass('active')
           $('#arrow-bottom').removeClass('active')
+          ele.addClass('active')
         } else {
+          ele.addClass('active')
           $('#arrow-top').addClass('active')
           $('#arrow-bottom').addClass('active')
         }
