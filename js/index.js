@@ -19,10 +19,12 @@ $(window).on('load', function () {
       setHeights: false,
       after: (i, section) => {
         const ele = $.scrollify.current().find('.move-btn')
+        const slideImgEle = $.scrollify.current().find('.slideImg')
         const nextSecDesEle = $.scrollify.current().children().children().find('.section-description')
         const desBtnEle = $.scrollify.current().children().children().find('.description-btn')
         const isClose = nextSecDesEle.hasClass('close')
         const isDone = nextSecDesEle.hasClass('done')
+        //open close ボタン制御
         if (isClose && !isDone) {
           nextSecDesEle.removeClass('close')
           nextSecDesEle.addClass('done')
@@ -36,10 +38,12 @@ $(window).on('load', function () {
           $('#arrow-top').addClass('active')
           $('#arrow-bottom').removeClass('active')
           ele.addClass('active')
+          slideImgEle.addClass('active')
         } else {
           ele.addClass('active')
           $('#arrow-top').addClass('active')
           $('#arrow-bottom').addClass('active')
+          slideImgEle.addClass('active')
         }
       },
     })

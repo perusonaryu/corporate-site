@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: 'NotoSansJP';
+    src: url('../NotoSansJP-VariableFont_wght.ttf');
+  }
   html {
-    font-family: 'Helvetica';
+    font-family: 'NotoSansJP';
   }
 }

@@ -30,12 +30,21 @@
   opacity: 1;
 }
 
-.move-btn{
+.move-btn {
   transition: all 2s;
   opacity: 0;
 }
-.move-btn.active{
+.move-btn.active {
   opacity: 1;
+}
+
+.slideImg {
+  transition: all 7s;
+  transform: scale(1.25);
+}
+
+.slideImg.active {
+  transform: scale(1);
 }
 
 /* アニメーション */
