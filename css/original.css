@@ -39,7 +39,7 @@
 }
 
 .slideImg {
-  transition: all 7s;
+  transition: all 5s;
   transform: scale(1.25);
 }
 

@@ -1,9 +1,18 @@
 $(function () {
   $('html,body').scrollTop(0)
-  $('.slide-items').slick({
-    arrows: false, // 矢印
-    dots: true, // インジケーター
-  })
+  //スライドがあるセクション分slick適用
+  for (i = 1; i <= 5; i++) {
+    $('.slide-item' + i).slick({
+      arrows: false, // 矢印
+      dots: true, // インジケーター
+      speed: 1000,
+      autoplay: false,
+      autoplaySpeed: 5000,
+      pauseOnFocus: false, //フォーカスで一時停止
+      pauseOnHover: false, //マウスホバーで一時停止
+      pauseOnDotsHover: false, //ドットナビをマウスホバーで一時停止
+    })
+  }
 })
 $(window).on('load', function () {
   setTimeout(function () {
@@ -18,6 +27,7 @@ $(window).on('load', function () {
       updateHash: false,
       setHeights: false,
       after: (i, section) => {
+        $('.slide-item' + i).slick('slickSetOption', 'autoplay', true, true)
         const ele = $.scrollify.current().find('.move-btn')
         const slideImgEle = $.scrollify.current().find('.slideImg')
         const nextSecDesEle = $.scrollify.current().children().children().find('.section-description')
