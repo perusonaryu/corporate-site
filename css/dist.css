@@ -755,6 +755,14 @@ html {
   height: 100vh;
 }
 
+.h-\[50\%\] {
+  height: 50%;
+}
+
+.h-\[\] {
+  height: ;
+}
+
 .w-\[100px\] {
   width: 100px;
 }
@@ -959,6 +967,10 @@ html {
 
 .font-thin {
   font-weight: 100;
+}
+
+.font-extralight {
+  font-weight: 200;
 }
 
 .leading-7 {
