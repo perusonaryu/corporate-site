@@ -1,16 +1,26 @@
+document.addEventListener('touchstart', function () {}, { passive: true })
 $(function () {
-  $('html,body').scrollTop(0)
+  $('html,body').animate({ scrollTop: 0 }, '1')
   //スライドがあるセクション分slick適用
   for (i = 1; i <= 5; i++) {
-    $('.slide-item' + i).slick({
+    const slider = $('.slide-item' + i)
+    slider.slick({
       arrows: false, // 矢印
       dots: true, // インジケーター
-      speed: 1000,
+      speed: 2500,
       autoplay: false,
       autoplaySpeed: 5000,
       pauseOnFocus: false, //フォーカスで一時停止
       pauseOnHover: false, //マウスホバーで一時停止
       pauseOnDotsHover: false, //ドットナビをマウスホバーで一時停止
+    })
+    slider.on('beforeChange', function (slick, currentSlide) {
+      $(currentSlide.$slider[0]).find('.slick-active').find('img').removeClass('active')
+      // $(currentSlide.$slider[0]).find('.slick-cloned').find('.first-slide').removeClass('active')
+    })
+    slider.on('afterChange', function (slick, currentSlide) {
+      $(currentSlide.$slider[0]).find('.slick-active').find('img').addClass('active')
+      // $(currentSlide.$slider[0]).find('.slick-cloned').find('.first-slide').addClass('active')
     })
   }
 })
@@ -29,7 +39,7 @@ $(window).on('load', function () {
       after: (i, section) => {
         $('.slide-item' + i).slick('slickSetOption', 'autoplay', true, true)
         const ele = $.scrollify.current().find('.move-btn')
-        const slideImgEle = $.scrollify.current().find('.slideImg')
+        const firstSlideImgEle = $.scrollify.current().find('.first-slide')
         const nextSecDesEle = $.scrollify.current().children().children().find('.section-description')
         const desBtnEle = $.scrollify.current().children().children().find('.description-btn')
         const isClose = nextSecDesEle.hasClass('close')
@@ -48,12 +58,18 @@ $(window).on('load', function () {
           $('#arrow-top').addClass('active')
           $('#arrow-bottom').removeClass('active')
           ele.addClass('active')
-          slideImgEle.addClass('active')
+          //初期表示時のみ
+          if (firstSlideImgEle.hasClass('done') == false) {
+            firstSlideImgEle.addClass('active done')
+          }
         } else {
           ele.addClass('active')
           $('#arrow-top').addClass('active')
           $('#arrow-bottom').addClass('active')
-          slideImgEle.addClass('active')
+          //初期表示時のみ
+          if (firstSlideImgEle.hasClass('done') == false) {
+            firstSlideImgEle.addClass('active done')
+          }
         }
       },
     })
