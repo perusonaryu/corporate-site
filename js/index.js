@@ -1,9 +1,15 @@
 document.addEventListener('touchstart', function () {}, { passive: true })
+sessionStorage.setItem('currentSectionNumber', 0)
 $(function () {
   $('html,body').animate({ scrollTop: 0 }, '1')
   //スライドがあるセクション分slick適用
   for (i = 1; i <= 5; i++) {
     const slider = $('.slide-item' + i)
+    $('.slide-item' + i)
+      .find('li')
+      .addClass(function (j, ele) {
+        return 'slide' + (j + 1)
+      })
     slider.slick({
       arrows: false, // 矢印
       dots: true, // インジケーター
@@ -16,16 +22,15 @@ $(function () {
     })
     slider.on('beforeChange', function (slick, currentSlide) {
       $(currentSlide.$slider[0]).find('.slick-active').find('img').removeClass('active')
-      // $(currentSlide.$slider[0]).find('.slick-cloned').find('.first-slide').removeClass('active')
     })
     slider.on('afterChange', function (slick, currentSlide) {
       $(currentSlide.$slider[0]).find('.slick-active').find('img').addClass('active')
-      // $(currentSlide.$slider[0]).find('.slick-cloned').find('.first-slide').addClass('active')
     })
   }
 })
 $(window).on('load', function () {
   setTimeout(function () {
+    $('main').removeClass('opacity-0')
     $('#green-back').addClass('slideOut')
   }, 5000)
   setTimeout(function () {
@@ -37,40 +42,42 @@ $(window).on('load', function () {
       updateHash: false,
       setHeights: false,
       after: (i, section) => {
-        $('.slide-item' + i).slick('slickSetOption', 'autoplay', true, true)
-        const ele = $.scrollify.current().find('.move-btn')
+        const prevSecIdx = sessionStorage.getItem('currentSectionNumber')
+        const arrowBtn = $.scrollify.current().find('.move-btn')
         const firstSlideImgEle = $.scrollify.current().find('.first-slide')
-        const nextSecDesEle = $.scrollify.current().children().children().find('.section-description')
-        const desBtnEle = $.scrollify.current().children().children().find('.description-btn')
-        const isClose = nextSecDesEle.hasClass('close')
-        const isDone = nextSecDesEle.hasClass('done')
-        //open close ボタン制御
-        if (isClose && !isDone) {
-          nextSecDesEle.removeClass('close')
-          nextSecDesEle.addClass('done')
-          desBtnEle.addClass('show')
-        }
+        const nextSecDesEle = $.scrollify.current().find('.section-description')
+        const prevSecDesEle = $(section[prevSecIdx]).find('.section-description')
 
+        const nextDesBtnEle = $.scrollify.current().find('.description-btn')
+        const prevDesBtnEle = $(section[prevSecIdx]).find('.description-btn')
+        //各セクションの詳細テキスト、toggleボタン表示制御
+        prevSecDesEle.addClass('close')
+        prevDesBtnEle.removeClass('show')
         if (i == 0) {
           $('#arrow-top').removeClass('active')
           $('#arrow-bottom').removeClass('active')
-        } else if (i == 5) {
+        } else {
+          $('.slide-item' + i).slick('slickSetOption', 'autoplay', true, true)
+          $('.slide-item' + prevSecIdx).slick('slickSetOption', 'autoplay', false, true)
+          //各セクションの詳細テキスト、toggleボタン表示制御
+          nextSecDesEle.removeClass('close')
+          nextDesBtnEle.addClass('show')
+
+          //セクション移動ボタン表示制御
+          arrowBtn.addClass('active')
           $('#arrow-top').addClass('active')
-          $('#arrow-bottom').removeClass('active')
-          ele.addClass('active')
           //初期表示時のみ
           if (firstSlideImgEle.hasClass('done') == false) {
             firstSlideImgEle.addClass('active done')
           }
-        } else {
-          ele.addClass('active')
-          $('#arrow-top').addClass('active')
-          $('#arrow-bottom').addClass('active')
-          //初期表示時のみ
-          if (firstSlideImgEle.hasClass('done') == false) {
-            firstSlideImgEle.addClass('active done')
+          if (i == 5) {
+            $('#arrow-bottom').removeClass('active')
+          } else {
+            $('#arrow-bottom').addClass('active')
           }
         }
+        //sessionStorageに一つ前のインデックスを保存
+        sessionStorage.setItem('currentSectionNumber', i)
       },
     })
     $('#inianimation').addClass('d-n')

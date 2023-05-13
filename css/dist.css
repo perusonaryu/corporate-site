@@ -610,6 +610,34 @@ html {
   top: 60%;
 }
 
+.left-\[25px\] {
+  left: 25px;
+}
+
+.left-\[60px\] {
+  left: 60px;
+}
+
+.left-\[15px\] {
+  left: 15px;
+}
+
+.top-\[2\%\] {
+  top: 2%;
+}
+
+.bottom-\[2\%\] {
+  bottom: 2%;
+}
+
+.top-\[10px\] {
+  top: 10px;
+}
+
+.bottom-\[10px\] {
+  bottom: 10px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -703,6 +731,10 @@ html {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-\[0px\] {
   height: 0px;
 }
@@ -755,6 +787,10 @@ html {
   height: 100vh;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
 .w-\[100px\] {
   width: 100px;
 }
@@ -781,6 +817,10 @@ html {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[50px\] {
+  width: 50px;
 }
 
 .translate-x-\[-50\%\] {
