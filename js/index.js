@@ -15,7 +15,7 @@ $(function () {
       dots: true, // インジケーター
       speed: 2500,
       autoplay: false,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 10000,
       pauseOnFocus: false, //フォーカスで一時停止
       pauseOnHover: false, //マウスホバーで一時停止
       pauseOnDotsHover: false, //ドットナビをマウスホバーで一時停止
