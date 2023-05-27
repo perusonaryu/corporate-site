@@ -546,16 +546,16 @@ html {
   bottom: 0px;
 }
 
-.bottom-\[10px\] {
-  bottom: 10px;
+.bottom-\[2\%\] {
+  bottom: 2%;
 }
 
 .bottom-\[45px\] {
   bottom: 45px;
 }
 
-.bottom-\[7\%\] {
-  bottom: 7%;
+.bottom-\[5\%\] {
+  bottom: 5%;
 }
 
 .left-\[15px\] {
@@ -586,8 +586,8 @@ html {
   top: 0px;
 }
 
-.top-\[10px\] {
-  top: 10px;
+.top-\[2\%\] {
+  top: 2%;
 }
 
 .top-\[25px\] {
@@ -602,20 +602,12 @@ html {
   top: 5%;
 }
 
+.top-\[50\%\] {
+  top: 50%;
+}
+
 .top-\[60\%\] {
   top: 60%;
-}
-
-.top-\[3\FF05\] {
-  top: 3％;
-}
-
-.top-\[3\%\] {
-  top: 3%;
-}
-
-.bottom-\[3\%\] {
-  bottom: 3%;
 }
 
 .z-10 {
@@ -751,6 +743,10 @@ html {
   height: calc(100vh - 140px);
 }
 
+.h-\[calc\(100vh_-_160px\)\] {
+  height: calc(100vh - 160px);
+}
+
 .h-full {
   height: 100%;
 }
@@ -777,6 +773,10 @@ html {
 
 .w-\[50px\] {
   width: 50px;
+}
+
+.w-\[60\%\] {
+  width: 60%;
 }
 
 .w-\[70px\] {
@@ -1028,12 +1028,12 @@ html {
   opacity: 0;
 }
 
-.duration-500 {
-  transition-duration: 500ms;
+.duration-1000 {
+  transition-duration: 1000ms;
 }
 
-.duration-700 {
-  transition-duration: 700ms;
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .animation-delay-3000 {
@@ -1058,6 +1058,6 @@ html {
   opacity: 0.6;
 }
 
-.group:hover .group-hover\:duration-700 {
-  transition-duration: 700ms;
+.group:hover .group-hover\:duration-1000 {
+  transition-duration: 1000ms;
 }
