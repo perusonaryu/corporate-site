@@ -1,11 +1,33 @@
 //ハンバーガーボタンクリックイベント
-$('.openbtn1,.openbtn2').click(function () {
+$('.openbtn1').click(function () {
   $('.openbtn1').toggleClass('active')
-  $('.openbtn2').toggleClass('active')
-  if ($('#menu').hasClass('d-n')) {
-    $('#menu').removeClass('d-n')
-    $('#menu').addClass('menu-fadein')
+  if ($('#otherScreen').hasClass('d-n')) {
+    $('#otherScreen').removeClass('d-n')
+    $('#otherScreen').addClass('menu-fadein')
   } else {
-    $('#menu').toggleClass('menu-fadein menu-fadeout')
+    $('#otherScreen').toggleClass('menu-fadein menu-fadeout')
+    $('#philosophy').addClass('d-n')
+    $('#contact').addClass('d-n')
+    $('#menuList').removeClass('d-n')
+  }
+})
+
+//philosophyクリック
+$('#philosophyBtn').click(function () {
+  $('#menuList').toggleClass('d-n')
+  $('#philosophy').toggleClass('d-n')
+})
+//contactクリック
+$('#contactBtn').click(function () {
+  $('#menuList').toggleClass('d-n')
+  $('#contact').toggleClass('d-n')
+})
+//menuボタンクリック
+$('.menuBtn').click(function () {
+  $('#menuList').toggleClass('d-n')
+  if (!$('#philosophy').hasClass('d-n')) {
+    $('#philosophy').addClass('d-n')
+  } else if (!$('#contact').hasClass('d-n')) {
+    $('#contact').addClass('d-n')
   }
 })
