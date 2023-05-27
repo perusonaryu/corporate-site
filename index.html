@@ -21,17 +21,94 @@
       </h1>
       <div class="openbtn1 flex justify-center align-center"><span class="bg-white"></span><span class="bg-white"></span><span class="bg-white"></span></div>
     </header>
-    <nav id="menu" class="fixed top-0 h-[0px] w-[calc(100%_-_40px)] mx-5 bg-white z-40 d-n">
+    <nav id="otherScreen" class="fixed top-0 h-[0px] w-[calc(100%_-_40px)] mt-[140px] mx-5 bg-white z-40 d-n">
       <div class="relative h-full w-full">
-        <ul class="absolute top-[60%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <ul id="menuList" class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
           <li class="mb-9 tracking-[2.7px] text-[#A4B0AB]"><a class="text-3xl">ARCHITECTURE</a></li>
           <li class="mb-9 tracking-[2.7px] text-[#A4B0AB]"><a class="text-3xl">INTERIOR</a></li>
           <li class="mb-9 tracking-[2.7px] text-[#A4B0AB]"><a class="text-3xl">WEBSITE</a></li>
           <li class="mb-9 tracking-[2.7px] text-[#A4B0AB]"><a class="text-3xl">GRAPHIC</a></li>
           <li class="mb-9 tracking-[2.7px] text-[#A4B0AB]"><a class="text-3xl">PRODUCT</a></li>
-          <li class="mb-9 tracking-[2.7px]"><a class="text-3xl hover:opacity-50 duration-500" href="./philosophy.html">PHILOSOPHY</a></li>
-          <li class="mb-9 tracking-[2.7px]"><a class="text-3xl hover:opacity-50 duration-500" href="./contact.html">CONTACT</a></li>
+          <li id="philosophyBtn" class="mb-9 tracking-[2.7px]"><a class="text-3xl hover:opacity-50 duration-500 cursor-pointer">PHILOSOPHY</a></li>
+          <li id="contactBtn" class="mb-9 tracking-[2.7px]"><a class="text-3xl hover:opacity-50 duration-500 cursor-pointer">CONTACT</a></li>
         </ul>
+        <div id="philosophy" class="w-full h-full text-center text-sm flex justify-center items-center relative d-n">
+          <div class="pt-8 w-[60%]">
+            <h3 class="text-base font-semibold absolute left-[30px] top-[30px]">PHILOSOPHY</h3>
+            <div class="menuBtn text-base font-semibold absolute right-[30px] top-[30px] cursor-pointer">MENU</div>
+            <div class="mb-[35px]">
+              <h2 class="text-base mb-2 font-semibold tracking-[1.6px]">デザインとは何か？</h2>
+              <p class="leading-7 text-[14px] tracking-[1.4px] font-extralight">
+                デザインとはセンスが良いというだけではありません。 最終的な目的はお客様の利益に繋げることです。 お客様からの情報を整理し、その過程で価値の本質を見極め、
+                明快に表現することでお客様の利益に繋げます。 住宅においては快適で幸せな暮らしを、ビジネスでのデザインにおいては 認知度、集客、売上の向上を目的としています。
+              </p>
+            </div>
+            <div class="mb-[35px]">
+              <h2 class="text-base mb-2 font-semibold tracking-[1.6px]">デザインの優位性</h2>
+              <p class="leading-7 text-[14px] tracking-[1.4px] font-extralight">
+                インターネットの普及は、農業革命、産業革命と並ぶ 情報革命をもたらしたと言われています。 様々な情報を共有できるようになったことで、同業他社との技術力やサービスの質に
+                差が生じにくい状況となりました。 かつて日本は技術力で世界で優位にたちましたが、その後IT大手のアップルは デザイン力の差で時価総額世界一の企業となりました。
+                今まさにデザインの質が問われているのです。
+              </p>
+            </div>
+            <div>
+              <h2 class="text-base mb-2 font-semibold tracking-[1.6px]">CACTUS design</h2>
+              <p class="leading-7 text-[14px] tracking-[1.4px] font-extralight">
+                私たちの最大の特徴は、ジャンルを問わずシームレスにデザインを請け負うことにあります。
+                建築士、デザイナー、カメラマン、プログラマーを擁し、名刺からWEB・店舗・建築に至るまで 一貫してデザインすることで統一されたイメージを構築します。
+                それはブランドの認知度が飛躍的に向上するだけでなく、集客、売上向上にも寄与します。 また、ジャンルを超えた業務は、あらゆるご要望にスムーズな対応を可能にします。
+                私たちCACTUS designでは独りよがりではなく、お客様の声に耳を傾けて 利益に繋がるデザインをご提供いたします。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="contact" class="w-full h-full text-sm relative d-n">
+          <div class="pt-[86px] ml-[80px] h-[50%]">
+            <h3 class="text-base font-semibold absolute left-[30px] top-[30px]">CONTACT</h3>
+            <div class="menuBtn text-base font-semibold absolute right-[30px] top-[30px] cursor-pointer">MENU</div>
+            <div class="mb-[35px] text-xs font-semibold">
+              <h2 class="mb-7 tracking-[1.6px]">カクタスデザイン</h2>
+              <table>
+                <tr class="">
+                  <th class="text-left inline-block mr-[25px] mb-1">共同代表</th>
+                  <td valign="top">古謝 毅 / デザイナー・ディレクター</td>
+                </tr>
+                <tr>
+                  <th class="text-left inline-block mr-[25px] mb-7"></th>
+                  <td valign="top">酒井 篤志 / デザイナー・二級建築士</td>
+                </tr>
+                <tr>
+                  <th class="text-left inline-block mr-[25px] mb-3">事業内容</th>
+                  <td valign="top">建築デザイン、インテリアデザイン、webデザイン、グラフィックデザイン、プロダクトデザイン</td>
+                </tr>
+                <tr>
+                  <th class="text-left inline-block mr-[25px] mb-1">住所</th>
+                  <td valign="top">〒904-0203 沖縄県中頭郡嘉手納町字嘉手納405-7 1F</td>
+                </tr>
+                <tr>
+                  <th class="text-left inline-block mr-[25px] mb-1">TEL</th>
+                  <td valign="top">050-1299-9763</td>
+                </tr>
+                <tr>
+                  <th class="text-left inline-block mr-[25px]">MAIL</th>
+                  <td valign="top">info@cactusdesign.jp</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="w-full h-[50%] absolute bottom-0 googlemap-bw">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.8370249634477!2d127.7492304763814!3d26.3641327769785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e513d8e0e6233b%3A0x2e5bb0ee031ceeb0!2z44CSOTA0LTAyMDMg5rKW57iE55yM5Lit6aCt6YOh5ZiJ5omL57SN55S65ZiJ5omL57SN77yU77yQ77yV!5e0!3m2!1sja!2sjp!4v1683235362442!5m2!1sja!2sjp"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </nav>
       </div>
     </nav>
 
@@ -42,11 +119,11 @@
     </div>
 
     <main class="w-full relative px-5 opacity-0">
-      <div class="pb-5 h-[calc(100vh_-_140px)] w-[70px] z-30 fixed left-[60px]">
+      <div class="h-[calc(100vh_-_160px)] w-[70px] z-30 fixed left-[60px]">
         <div class="absolute w-[50px] h-[50px] top-[5%]">
           <div id="arrow-top" class="arrow-top"></div>
         </div>
-        <div class="absolute w-[50px] h-[50px] bottom-[7%]">
+        <div class="absolute w-[50px] h-[50px] bottom-[5%]">
           <div id="arrow-bottom" class="arrow-bottom"></div>
         </div>
       </div>
@@ -149,12 +226,12 @@
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section2/B.jpg" alt="ARCHITECTURE2" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section2/C.jpg" alt="ARCHITECTURE3" /></li>
             </ul>
-            <div class="section1 move-btn absolute w-[100px] h-[90px] top-[3%] left-[15px] cursor-pointer z-40">
+            <div class="section1 move-btn absolute w-[100px] h-[90px] top-[2%] left-[15px] cursor-pointer z-40">
               <div class="flex justify-center h-full items-end">
                 <p class="text-white text-center">TOP</p>
               </div>
             </div>
-            <div class="section3 move-btn absolute w-[100px] h-[90px] bottom-[3%] left-[15px] cursor-pointer z-40">
+            <div class="section3 move-btn absolute w-[100px] h-[90px] bottom-[2%] left-[15px] cursor-pointer z-40">
               <div class="flex justify-center h-full items-start">
                 <p class="text-white text-center">INTERIOR</p>
               </div>
@@ -187,12 +264,12 @@
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section3/C.jpg" alt="INTERIOR3" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section3/D.jpg" alt="INTERIOR4" /></li>
             </ul>
-            <div class="section2 move-btn absolute w-[100px] h-[90px] top-[3%] left-[15px] cursor-pointer z-40">
+            <div class="section2 move-btn absolute w-[100px] h-[90px] top-[2%] left-[15px] cursor-pointer z-40">
               <div class="flex justify-center h-full items-end">
                 <p class="text-white text-center">ARCHITECTURE</p>
               </div>
             </div>
-            <div class="section4 move-btn absolute w-[100px] h-[90px] bottom-[3%] left-[15px] cursor-pointer z-40">
+            <div class="section4 move-btn absolute w-[100px] h-[90px] bottom-[2%] left-[15px] cursor-pointer z-40">
               <div class="flex justify-center h-full items-start">
                 <p class="text-white text-center">WEBSITE</p>
               </div>
@@ -227,12 +304,12 @@
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section4/D.jpg" alt="WEBSITE4" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section4/E.jpg" alt="WEBSITE5" /></li>
             </ul>
-            <div class="section3 move-btn absolute w-[100px] h-[90px] top-[3%] left-[15px] cursor-pointer z-40">
+            <div class="section3 move-btn absolute w-[100px] h-[90px] top-[2%] left-[15px] cursor-pointer z-40">
               <div class="flex justify-center h-full items-end">
                 <p class="text-white text-center">INTERIOR</p>
               </div>
             </div>
-            <div class="section5 move-btn absolute w-[100px] h-[90px] bottom-[3%] left-[15px] cursor-pointer z-40">
+            <div class="section5 move-btn absolute w-[100px] h-[90px] bottom-[2%] left-[15px] cursor-pointer z-40">
               <div class="flex justify-center h-full items-start">
                 <p class="text-white text-center">GRAPHIC</p>
               </div>
@@ -266,12 +343,12 @@
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section5/D.jpg" alt="GRAPHIC4" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section5/E.jpg" alt="GRAPHIC5" /></li>
             </ul>
-            <div class="section4 move-btn absolute w-[100px] h-[90px] top-[3%] left-[15px] cursor-pointer z-40">
+            <div class="section4 move-btn absolute w-[100px] h-[90px] top-[2%] left-[15px] cursor-pointer z-40">
               <div class="flex justify-center h-full items-end">
                 <p class="text-white text-center">WEBSITE</p>
               </div>
             </div>
-            <div class="section6 move-btn absolute w-[100px] h-[90px] bottom-[3%] left-[15px] cursor-pointer z-40">
+            <div class="section6 move-btn absolute w-[100px] h-[90px] bottom-[2%] left-[15px] cursor-pointer z-40">
               <div class="flex justify-center h-full items-start">
                 <p class="text-white text-center">PRODUCT</p>
               </div>
@@ -305,7 +382,7 @@
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section6/D.jpg" alt="PRODUCT4" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section6/E.jpg" alt="PRODUCT5" /></li>
             </ul>
-            <div class="section5 move-btn absolute w-[100px] h-[90px] top-[3%] left-[15px] cursor-pointer z-40">
+            <div class="section5 move-btn absolute w-[100px] h-[90px] top-[2%] left-[15px] cursor-pointer z-40">
               <div class="flex justify-center h-full items-end">
                 <p class="text-white text-center">WEBSITE</p>
               </div>
