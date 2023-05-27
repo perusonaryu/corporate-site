@@ -15,10 +15,11 @@ $(function () {
       dots: true, // インジケーター
       speed: 2500,
       autoplay: false,
-      autoplaySpeed: 10000,
+      autoplaySpeed: 5000,
       pauseOnFocus: false, //フォーカスで一時停止
       pauseOnHover: false, //マウスホバーで一時停止
       pauseOnDotsHover: false, //ドットナビをマウスホバーで一時停止
+      // prevArrow: '<button class="slide-arrow prev-arrow"></button>',
     })
     slider.on('beforeChange', function (slick, currentSlide) {
       $(currentSlide.$slider[0]).find('.slick-active').find('img').removeClass('active')
