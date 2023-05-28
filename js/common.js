@@ -1,14 +1,17 @@
 //ハンバーガーボタンクリックイベント
 $('.openbtn1').click(function () {
+  //メニュー表示時はメニュー一覧を表示する
+  if (!$('.openbtn1').hasClass('active')) {
+    $('#philosophy').addClass('d-n')
+    $('#contact').addClass('d-n')
+    $('#menuList').removeClass('d-n')
+  }
   $('.openbtn1').toggleClass('active')
   if ($('#otherScreen').hasClass('d-n')) {
     $('#otherScreen').removeClass('d-n')
     $('#otherScreen').addClass('menu-fadein')
   } else {
     $('#otherScreen').toggleClass('menu-fadein menu-fadeout')
-    $('#philosophy').addClass('d-n')
-    $('#contact').addClass('d-n')
-    $('#menuList').removeClass('d-n')
   }
 })
 
