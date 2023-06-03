@@ -1,3 +1,7 @@
+section {
+  /* スマホ用 */
+  height: -webkit-fill-available;
+}
 .d-n {
   display: none !important;
 }
