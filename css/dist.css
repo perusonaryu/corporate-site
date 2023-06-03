@@ -1224,6 +1224,10 @@ html {
     padding-top: 140px;
   }
 
+  .sm\:pt-\[90px\] {
+    padding-top: 90px;
+  }
+
   .sm\:text-\[14px\] {
     font-size: 14px;
   }
