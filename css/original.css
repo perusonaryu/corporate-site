@@ -1,7 +1,3 @@
-section {
-  /* スマホ用 */
-  height: -webkit-fill-available;
-}
 .d-n {
   display: none !important;
 }
@@ -113,6 +109,12 @@ section {
   opacity: 0;
 }
 
+/* 動的に画面の高さを設定 */
+.full-screen-height {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
 @keyframes default-animation {
   0% {
     opacity: 0;
@@ -178,28 +180,29 @@ section {
     height: 0px;
   }
   1% {
-    height: calc(100vh - 116px);
+    height: calc(calc(var(--vh, 1vh) * 100) - 116px);
   }
   100% {
     opacity: 0.93;
-    height: calc(100vh - 116px);
+    height: calc(calc(var(--vh, 1vh) * 100) - 116px);
   }
 }
 
 @keyframes menu-fadeout {
   0% {
     opacity: 0.93;
-    height: calc(100vh - 116px);
+    height: calc(calc(var(--vh, 1vh) * 100) - 116px);
   }
 
   99% {
-    height: calc(100vh - 116px);
+    height: calc(calc(var(--vh, 1vh) * 100) - 116px);
   }
   100% {
     height: 0px;
     opacity: 0;
   }
 }
+/* end sp用アニメーション */
 
 @keyframes menu-fadeout-ul {
   0% {
@@ -221,7 +224,7 @@ section {
       height: 0px;
     }
     1% {
-      height: calc(100vh - 160px);
+      height: calc(calc(var(--vh, 1vh) * 100) - 160px);
     }
     100% {
       opacity: 0.93;

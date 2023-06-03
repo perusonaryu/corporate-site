@@ -1,5 +1,16 @@
 document.addEventListener('touchstart', function () {}, { passive: true })
 sessionStorage.setItem('currentSectionNumber', 0)
+
+//デバイスの画面の高さ（1vh）を算出する関数
+function setHeight() {
+  let vh = window.innerHeight * 0.01
+  document.documentElement.style.setProperty('--vh', `${vh}px`)
+}
+//アクセス時に関数を実行
+setHeight()
+//画面回転（リサイズ時）に関数を実行する
+window.addEventListener('resize', setHeight)
+
 $(function () {
   $('html,body').animate({ scrollTop: 0 }, '1')
   //スライドがあるセクション分slick適用
