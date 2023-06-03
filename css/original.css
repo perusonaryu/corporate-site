@@ -167,28 +167,29 @@
   }
 }
 
+/* sp用アニメーション */
 @keyframes menu-fadein {
   0% {
     opacity: 0;
     height: 0px;
   }
   1% {
-    height: calc(100vh - 160px);
+    height: calc(100vh - 116px);
   }
   100% {
     opacity: 0.93;
-    height: calc(100vh - 160px);
+    height: calc(100vh - 116px);
   }
 }
 
 @keyframes menu-fadeout {
   0% {
     opacity: 0.93;
-    height: calc(100vh - 160px);
+    height: calc(100vh - 116px);
   }
 
   99% {
-    height: calc(100vh - 160px);
+    height: calc(100vh - 116px);
   }
   100% {
     height: 0px;
@@ -205,5 +206,37 @@
   }
   100% {
     height: 0px;
+  }
+}
+
+/* PC用アニメーション */
+@media (min-width: 640px) {
+  @keyframes menu-fadein {
+    0% {
+      opacity: 0;
+      height: 0px;
+    }
+    1% {
+      height: calc(100vh - 160px);
+    }
+    100% {
+      opacity: 0.93;
+      height: calc(100vh - 160px);
+    }
+  }
+
+  @keyframes menu-fadeout {
+    0% {
+      opacity: 0.93;
+      height: calc(100vh - 160px);
+    }
+
+    99% {
+      height: calc(100vh - 160px);
+    }
+    100% {
+      height: 0px;
+      opacity: 0;
+    }
   }
 }

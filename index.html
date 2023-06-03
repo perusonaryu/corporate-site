@@ -13,15 +13,15 @@
     <link rel="stylesheet" href="./css/slick.css" />
   </head>
   <body class="overflow-hidden bg-[#A4B0AB]">
-    <header class="fixed bg-[#A4B0AB] top-0 h-[140px] w-full px-[50px] flex justify-between items-center z-50">
+    <header class="fixed bg-[#A4B0AB] top-0 sm:h-[140px] h-[90px] w-full sm:px-[50px] pl-[30px] pr-[20px] flex justify-between items-center z-50">
       <h1 class="section1 text-[14px] font-medium flex align-center cursor-pointer">
         <a href="./index.html">
-          <img src="./images/logo.png" alt="ロゴ" class="w-[250px] object-cover" />
+          <img src="./images/logo.png" alt="ロゴ" class="sm:w-[250px] w-[128px] object-cover" />
         </a>
       </h1>
       <div class="openbtn1 flex justify-center align-center"><span class="bg-white"></span><span class="bg-white"></span><span class="bg-white"></span></div>
     </header>
-    <nav id="otherScreen" class="fixed top-0 h-[0px] w-[calc(100%_-_40px)] mt-[140px] mx-5 bg-white z-40 d-n">
+    <nav id="otherScreen" class="fixed top-0 h-[0px] w-[calc(100%_-_30px)] sm:w-[calc(100%_-_40px)] mt-[90px] sm:mt-[140px] mx-[15px] sm:mx-5 bg-white z-40 d-n">
       <div class="relative h-full w-full">
         <ul id="menuList" class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
           <li class="mb-9 tracking-[2.7px] text-[#A4B0AB]"><a class="text-3xl">ARCHITECTURE</a></li>
@@ -103,12 +103,11 @@
               height="100%"
               style="border: 0"
               allowfullscreen=""
-              loading=”eager”
+              loading="”eager”"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
-      </nav>
       </div>
     </nav>
 
@@ -118,7 +117,7 @@
       <img id="opening-logo" src="./images/logoicon.png" alt="ロゴアイコン" class="w-[200px] h-[200px] logo-animation [animation-delay:2.0s] opacity-0" />
     </div>
 
-    <main class="w-full relative px-5 opacity-0">
+    <main class="w-full relative px-[15px] sm:px-5 opacity-0">
       <div class="h-[calc(100vh_-_160px)] w-[70px] z-30 fixed left-[60px]">
         <div class="absolute w-[50px] h-[50px] top-[5%]">
           <div id="arrow-top" class="arrow-top"></div>
@@ -128,75 +127,90 @@
         </div>
       </div>
       <!-- 1ページ目 start -->
-      <section class="pb-5 h-[calc(100vh_-_140px)] mt-[140px] z-20">
-        <ul id="top-list" class="top-list grid grid-cols-5 gap-5 h-full text-center text-white relative">
-          <li class="flex items-end section2">
-            <div class="group cursor-pointer h-[85%] w-full">
-              <h3 class="flex justify-center h-[20%] inline-block relative">
-                <span class="absolute bottom-[45px] tracking-[2.4px]"> ARCHITECTURE </span>
+      <section class="pb-[55px] sm:pb-5 h-[calc(100vh_-_90px)] sm:h-[calc(100vh_-_140px)] mt-[90px] sm:mt-[140px] z-20">
+        <ul id="top-list" class="top-list grid sm:grid-cols-5 grid-cols-1 grid-rows-5 sm:grid-rows-1 gap-5 h-full text-center text-white relative">
+          <li class="flex sm:items-end section2">
+            <div class="flex flex-row-reverse justify-between group cursor-pointer h-[100%] sm:h-[85%] w-full sm:inline-block">
+              <h3 class="flex justify-center sm:h-[20%] inline-block sm:relative pr-[10px] sm:pr-0">
+                <span class="flex justify-center items-center text-[9px] sm:text-[16px] xs:inline sm:absolute sm:bottom-[45px] tracking-[2.4px]"> ARCHITECTURE </span>
               </h3>
-              <div class="w-full h-[80%] bg-black overflow-hidden">
+              <div class="w-[60%] sm:w-full sm:h-[80%] bg-black overflow-hidden">
+                <!-- pc用画像 -->
                 <img
-                  class="w-full h-full object-cover group-hover:opacity-60 group-hover:scale-125 group-hover:duration-1000 duration-1000"
-                  src="./images/section1/ARCHTECT.png"
-                  alt=""
+                  class="hidden sm:block w-full h-full object-cover group-hover:opacity-60 group-hover:scale-125 group-hover:duration-1000 duration-1000"
+                  src="./images/section1/ARCHITECTURE.png"
+                  alt="ARCHITECTURE"
                 />
+                <!-- sp用画像 -->
+                <img class="block sm:hidden w-full h-full object-cover" src="./images/section1/ARCHITECTURE_sp.jpg" alt="ARCHITECTURE" />
               </div>
             </div>
           </li>
-          <li class="flex items-end section3">
-            <div class="group cursor-pointer h-[85%] w-full">
-              <h3 class="flex justify-center h-[20%] inline-block relative">
-                <span class="absolute bottom-[45px] tracking-[2.4px]"> INTERIOR </span>
+          <li class="flex sm:items-end section3">
+            <div class="flex flex-row-reverse justify-between group cursor-pointer h-[100%] sm:h-[85%] w-full sm:inline-block">
+              <h3 class="flex justify-center sm:h-[20%] inline-block sm:relative pr-[10px] sm:pr-0">
+                <span class="flex justify-center items-center text-[9px] sm:text-[16px] xs:inline sm:absolute sm:bottom-[45px] tracking-[2.4px]"> INTERIOR </span>
               </h3>
-              <div class="w-full h-[80%] bg-black overflow-hidden">
+              <div class="w-[60%] sm:w-full sm:h-[80%] bg-black overflow-hidden">
+                <!-- pc用画像 -->
                 <img
-                  class="w-full h-full object-cover group-hover:opacity-60 group-hover:scale-125 group-hover:duration-1000 duration-1000"
+                  class="hidden sm:block w-full h-full object-cover group-hover:opacity-60 group-hover:scale-125 group-hover:duration-1000 duration-1000"
                   src="./images/section1/INTERIOR.png"
-                  alt=""
+                  alt="INTERIOR"
                 />
+                <!-- sp用画像 -->
+                <img class="block sm:hidden w-full h-full object-cover" src="./images/section1/INTERIOR_sp.jpg" alt="INTERIOR" />
               </div>
             </div>
           </li>
-          <li class="flex items-end section4">
-            <div class="group cursor-pointer h-[85%] w-full">
-              <h3 class="flex justify-center h-[20%] inline-block relative">
-                <span class="absolute bottom-[45px] tracking-[2.4px]"> WEBSITE </span>
+          <li class="flex sm:items-end section4">
+            <div class="flex flex-row-reverse justify-between group cursor-pointer h-[100%] sm:h-[85%] w-full sm:inline-block">
+              <h3 class="flex justify-center sm:h-[20%] inline-block sm:relative pr-[10px] sm:pr-0">
+                <span class="flex justify-center items-center text-[9px] sm:text-[16px] xs:inline sm:absolute sm:bottom-[45px] tracking-[2.4px]"> WEBSITE </span>
               </h3>
-              <div class="w-full h-[80%] bg-black overflow-hidden">
+              <div class="w-[60%] sm:w-full sm:h-[80%] bg-black overflow-hidden">
+                <!-- pc用画像 -->
                 <img
-                  class="w-full h-full object-cover group-hover:opacity-60 group-hover:scale-125 group-hover:duration-1000 duration-1000"
+                  class="hidden sm:block w-full h-full object-cover group-hover:opacity-60 group-hover:scale-125 group-hover:duration-1000 duration-1000"
                   src="./images/section1/WEBSITE.png"
-                  alt=""
+                  alt="WEBSITE"
                 />
+                <!-- sp用画像 -->
+                <img class="block sm:hidden w-full h-full object-cover" src="./images/section1/WEBSITE_sp.jpg" alt="WEBSITE" />
               </div>
             </div>
           </li>
-          <li class="flex items-end section5">
-            <div class="group cursor-pointer h-[85%] w-full">
-              <h3 class="flex justify-center h-[20%] inline-block relative">
-                <span class="absolute bottom-[45px] tracking-[2.4px]"> GRAPHIC </span>
+          <li class="flex sm:items-end section5">
+            <div class="flex flex-row-reverse justify-between group cursor-pointer h-[100%] sm:h-[85%] w-full sm:inline-block">
+              <h3 class="flex justify-center sm:h-[20%] inline-block sm:relative pr-[10px] sm:pr-0">
+                <span class="flex justify-center items-center text-[9px] sm:text-[16px] xs:inline sm:absolute sm:bottom-[45px] tracking-[2.4px]"> GRAPHIC </span>
               </h3>
-              <div class="w-full h-[80%] bg-black overflow-hidden">
+              <div class="w-[60%] sm:w-full sm:h-[80%] bg-black overflow-hidden">
+                <!-- pc用画像 -->
                 <img
-                  class="w-full h-full object-cover group-hover:opacity-60 group-hover:scale-125 group-hover:duration-1000 duration-1000"
+                  class="hidden sm:block w-full h-full object-cover group-hover:opacity-60 group-hover:scale-125 group-hover:duration-1000 duration-1000"
                   src="./images/section1/GRAPHIC.png"
-                  alt=""
+                  alt="GRAPHIC"
                 />
+                <!-- sp用画像 -->
+                <img class="block sm:hidden w-full h-full object-cover" src="./images/section1/GRAPHIC_sp.jpg" alt="GRAPHIC" />
               </div>
             </div>
           </li>
-          <li class="flex items-end section6">
-            <div class="group cursor-pointer h-[85%] w-full">
-              <h3 class="flex justify-center h-[20%] inline-block relative">
-                <span class="absolute bottom-[45px] tracking-[2.4px]"> PRODUCT </span>
+          <li class="flex sm:items-end section6">
+            <div class="flex flex-row-reverse justify-between group cursor-pointer h-[100%] sm:h-[85%] w-full sm:inline-block">
+              <h3 class="flex justify-center sm:h-[20%] inline-block sm:relative pr-[10px] sm:pr-0">
+                <span class="flex justify-center items-center text-[9px] sm:text-[16px] xs:inline sm:absolute sm:bottom-[45px] tracking-[2.4px]"> PRODUCT </span>
               </h3>
-              <div class="w-full h-[80%] bg-black overflow-hidden">
+              <div class="w-[60%] sm:w-full sm:h-[80%] bg-black overflow-hidden">
+                <!-- pc用画像 -->
                 <img
-                  class="w-full h-full object-cover group-hover:opacity-60 group-hover:scale-125 group-hover:duration-1000 duration-1000"
+                  class="hidden sm:block w-full h-full object-cover group-hover:opacity-60 group-hover:scale-125 group-hover:duration-1000 duration-1000"
                   src="./images/section1/PRODUCT.png"
-                  alt=""
+                  alt="PRODUCT"
                 />
+                <!-- sp用画像 -->
+                <img class="block sm:hidden w-full h-full object-cover" src="./images/section1/PRODUCT_sp.jpg" alt="PRODUCT" />
               </div>
             </div>
           </li>
@@ -205,7 +219,7 @@
       <!-- 1ページ目 end -->
 
       <!-- 2ページ目 start -->
-      <section class="pb-5 h-[100vh] relative">
+      <section class="pb-[26px] sm:pb-5 h-[100vh] relative">
         <div class="pt-[140px] h-full w-full">
           <div class="h-full w-full overflow-hidden relative">
             <div class="absolute top-[25px] right-[30px] z-10">
@@ -242,7 +256,7 @@
       <!-- 2ページ目 end -->
 
       <!-- 3ページ目 start -->
-      <section class="pb-5 h-[100vh] relative">
+      <section class="pb-[26px] sm:pb-5 h-[100vh] relative">
         <div class="pt-[140px] h-full w-full">
           <div class="h-full w-full overflow-hidden relative">
             <div class="absolute top-[25px] right-[30px] z-10">
@@ -280,7 +294,7 @@
       <!-- 3ページ目 end -->
 
       <!-- 4ページ目 start -->
-      <section class="pb-5 h-[100vh] relative">
+      <section class="pb-[26px] sm:pb-5 h-[100vh] relative">
         <div class="pt-[140px] h-full w-full">
           <div class="h-full w-full overflow-hidden relative bg-gray-300">
             <div class="absolute top-[25px] right-[30px] z-10">
@@ -320,7 +334,7 @@
       <!-- 4ページ目 end -->
 
       <!-- 5ページ目 start -->
-      <section class="pb-5 h-[100vh] relative">
+      <section class="pb-[26px] sm:pb-5 h-[100vh] relative">
         <div class="pt-[140px] h-full w-full">
           <div class="h-full w-full overflow-hidden relative">
             <div class="absolute top-[25px] right-[30px] z-10">
@@ -359,7 +373,7 @@
       <!-- 5ページ目 end -->
 
       <!-- 6ページ目 start -->
-      <section class="pb-5 h-[100vh] relative">
+      <section class="pb-[26px] sm:pb-5 h-[100vh] relative">
         <div class="pt-[140px] h-full w-full">
           <div class="h-full w-full overflow-hidden relative">
             <div class="absolute top-[25px] right-[30px] z-10">
@@ -388,6 +402,9 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="absolute bottom-[10px] sm:bottom-0 left-[50%] translate-x-[-50%]">
+          <p class="text-white text-[9px] sm:text-[14px] tracking-[calc(100em_/_1000)]">&copy; 2023 CACTUS design</p>
         </div>
       </section>
       <!-- 6ページ目 end -->
