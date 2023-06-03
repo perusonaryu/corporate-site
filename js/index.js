@@ -13,6 +13,7 @@ window.addEventListener('resize', setHeight)
 
 $(function () {
   $('html,body').animate({ scrollTop: 0 }, '1')
+  $('#arrows').css('z-index', '-1')
   //スライドがあるセクション分slick適用
   for (i = 1; i <= 5; i++) {
     const slider = $('.slide-item' + i)
@@ -66,11 +67,11 @@ $(window).on('load', function () {
         prevSecDesEle.addClass('close')
         prevDesBtnEle.removeClass('show')
         if (i == 0) {
-          $('#arrows').css('z-index','-1')
+          $('#arrows').css('z-index', '-1')
           $('#arrow-top').removeClass('active')
           $('#arrow-bottom').removeClass('active')
         } else {
-          $('#arrows').css('z-index','30')
+          $('#arrows').css('z-index', '30')
           $('.slide-item' + i).slick('slickSetOption', 'autoplay', true, true)
           $('.slide-item' + prevSecIdx).slick('slickSetOption', 'autoplay', false, true)
           //各セクションの詳細テキスト、toggleボタン表示制御
