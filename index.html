@@ -69,11 +69,11 @@
           </div>
         </div>
         <div id="contact" class="w-full h-full text-sm relative d-n">
-          <div class="pt-[86px] mx-[10px] sm:ml-[80px] h-[50%]">
+          <div class="pt-[60px] sm:pt-[86px] mx-[10px] sm:ml-[80px] h-[50%]">
             <h3 class="text-[14px] sm:text-base font-semibold absolute left-[10px] sm:left-[30px] top-[20px] sm:top-[30px]">CONTACT</h3>
             <div class="menuBtn text-[14px] sm:text-base font-semibold absolute right-[10px] sm:right-[30px] top-[20px] sm:top-[30px] cursor-pointer">MENU</div>
             <div class="mb-[35px] text-[11px] sm:text-xs font-semibold">
-              <h2 class="mb-7 tracking-[1.6px]">カクタスデザイン</h2>
+              <h2 class="mb-4 sm:mb-7 tracking-[1.6px]">カクタスデザイン</h2>
               <table>
                 <tr>
                   <th class="w-[60px] text-left inline-block mr-[14px] sm:mr-[25px] mb-1">共同代表</th>
@@ -134,12 +134,12 @@
       <img id="opening-logo" src="./images/logoicon.png" alt="ロゴアイコン" class="w-[200px] h-[200px] logo-animation [animation-delay:2.0s] opacity-0" />
     </div>
 
-    <main class="w-full relative px-[15px] sm:px-5 opacity-0">
-      <div id="arrows" class="h-[calc(100vh_-_160px)] w-[70px] fixed left-[60px] mt-[90px] sm:mt-[140px]">
-        <div class="absolute w-[50px] h-[50px] top-[5%]">
+    <main class="w-[calc(100%_-_20px)] sm:w-[calc(100%_-_40px)] relative mx-[10px] sm:mx-5 opacity-0">
+      <div id="arrows" class="h-sp-content-height sm:h-pc-content-height w-[23px] sm:w-[90px] fixed right-[24.5px] sm:left-[40px] mt-[90px] sm:mt-[140px]">
+        <div class="absolute w-[16px] h-[16px] sm:w-[50px] sm:h-[50px] top-[2.5%] sm:top-[5%] left-[50%] translate-x-[-50%]">
           <div id="arrow-top" class="arrow-top"></div>
         </div>
-        <div class="absolute w-[50px] h-[50px] bottom-[5%]">
+        <div class="absolute w-[16px] h-[16px] sm:w-[50px] sm:h-[50px] bottom-[2.5%] sm:bottom-[5%] left-[50%] translate-x-[-50%]">
           <div id="arrow-bottom" class="arrow-bottom"></div>
         </div>
       </div>
@@ -239,10 +239,10 @@
       <section class="pb-[26px] sm:pb-5 relative full-screen-height">
         <div class="pt-[90px] sm:pt-[140px] h-full w-full">
           <div class="h-full w-full overflow-hidden relative">
-            <div class="absolute top-[25px] right-[30px] z-10">
+            <div class="hidden sm:block absolute top-[25px] right-[30px] z-10">
               <div class="description-btn active"><span></span><span></span></div>
             </div>
-            <div class="section-description close flex flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-[30px] absolute right-0 text-white tracking-[0.25em] z-[5]">
+            <div class="hidden sm:flex section-description close flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-[30px] absolute right-0 text-white tracking-[0.25em] z-[5]">
               <h3 class="text-[21px] mb-3 tracking-[4.2px] font-medium">ARCHITECTURE</h3>
               <h4 class="text-lg mt-[38px] tracking-[7.2px] font-thin">幸せな暮らしをご提供</h4>
 
@@ -252,19 +252,29 @@
                 </p>
               </div>
             </div>
-            <ul class="slide-item1 h-full w-full relative">
+            <div class="block sm:hidden h-[35%] px-[15px] pt-5 pb-[10px] bg-[#ADADAD] text-white">
+              <h3 class="text-[11px] mb-5 tracking-[calc(200em_/_1000)] font-light">ARCHITECTURE</h3>
+              <h4 class="text-[18px] mb-8 tracking-[calc(180em_/_1000)] font-thin">幸せな暮らしをご提供</h4>
+
+              <div class="text-[10px] mt-auto font-light leading-[calc(20_/_10)] tracking-[calc(180em_/_1000)]">
+                <p>
+                  建築とは自然災害から身を守るため、自然環境との境界線（壁）を作る行為です。言い換えれば、人間の本能的な欲求である自然環境（外気、日差し、緑、水）との繋がりを希薄にする行為です。CACTUSdesignでは、屋内と屋外を一体的に計画することで自然環境との繋がりを取り戻し、快適で幸せな暮らしをご提供いたします。
+                </p>
+              </div>
+            </div>
+            <ul class="slide-item1 h-[65%] sm:h-full w-full sm:relative">
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg first-slide" src="./images/section2/A.jpg" alt="ARCHITECTURE1" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section2/B.jpg" alt="ARCHITECTURE2" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section2/C.jpg" alt="ARCHITECTURE3" /></li>
             </ul>
-            <div class="section1 move-btn absolute w-[100px] h-[90px] top-[2%] left-[15px] cursor-pointer z-40">
+            <div class="section1 move-btn absolute w-[23px] sm:w-[100px] h-[40px] sm:h-[90px] top-[10px] right-[14.5px] sm:top-[2%] sm:left-[15px] cursor-pointer z-40">
               <div class="flex justify-center h-full items-end">
-                <p class="text-white text-center">TOP</p>
+                <p class="text-[10px] sm:text-[16px] text-white text-center">TOP</p>
               </div>
             </div>
-            <div class="section3 move-btn absolute w-[100px] h-[90px] bottom-[2%] left-[15px] cursor-pointer z-40">
+            <div class="section3 move-btn absolute w-[23px] sm:w-[100px] h-[40px] sm:h-[90px] bottom-[10px] right-[15.7px] sm:bottom-[2%] sm:left-[15px] cursor-pointer z-40">
               <div class="flex justify-center h-full items-start">
-                <p class="text-white text-center">INTERIOR</p>
+                <p class="text-[10px] sm:text-[16px] text-white text-center">INTERIOR</p>
               </div>
             </div>
           </div>
@@ -276,10 +286,10 @@
       <section class="pb-[26px] sm:pb-5 relative full-screen-height">
         <div class="pt-[90px] sm:pt-[140px] h-full w-full">
           <div class="h-full w-full overflow-hidden relative">
-            <div class="absolute top-[25px] right-[30px] z-10">
+            <div class="hidden sm:block absolute top-[25px] right-[30px] z-10">
               <div class="description-btn active"><span></span><span></span></div>
             </div>
-            <div class="section-description close flex flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-[30px] absolute right-0 text-white tracking-[0.25em] z-[5]">
+            <div class="hidden sm:flex section-description close flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-[30px] absolute right-0 text-white tracking-[0.25em] z-[5]">
               <h3 class="text-[21px] mb-3 tracking-[4.2px] font-medium">INTERIOR</h3>
               <h4 class="text-lg mt-[38px] tracking-[7.2px] font-thin">住宅、店舗、ホテル、ショールーム</h4>
 
@@ -289,20 +299,30 @@
                 </p>
               </div>
             </div>
-            <ul class="slide-item2 h-full w-full relative">
+            <div class="block sm:hidden h-[35%] px-[15px] pt-5 pb-[10px] bg-[#ADADAD] text-white">
+              <h3 class="text-[11px] mb-5 tracking-[calc(200em_/_1000)] font-light">INTERIOR</h3>
+              <h4 class="text-[18px] mb-8 tracking-[calc(30em_/_1000)] font-thin">住宅、店舗、ホテル、ショールーム</h4>
+
+              <div class="text-[10px] mt-auto font-light leading-[calc(20_/_10)] tracking-[calc(180em_/_1000)]">
+                <p>
+                  CACTUSdesignではシンプルなインテリアデザインを提案しています。シンプルとは何もないということではなく、あらゆるご要望を整理して空間に落とし込み、分かり易くすることです。整理された空間は、住宅においてはストレスフリーとなって人を主役にし、商業空間においてはスムーズな動線を生み出して消費を促すと同時に、ブランドアイデンティティーを明確にします。
+                </p>
+              </div>
+            </div>
+            <ul class="slide-item2 h-[65%] sm:h-full w-full sm:relative">
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg first-slide" src="./images/section3/A.jpg" alt="INTERIOR1" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section3/B.jpg" alt="INTERIOR2" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section3/C.jpg" alt="INTERIOR3" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section3/D.jpg" alt="INTERIOR4" /></li>
             </ul>
-            <div class="section2 move-btn absolute w-[100px] h-[90px] top-[2%] left-[15px] cursor-pointer z-40">
-              <div class="flex justify-center h-full items-end">
-                <p class="text-white text-center">ARCHITECTURE</p>
+            <div class="section2 move-btn absolute w-[23px] sm:w-[100px] h-[40px] sm:h-[90px] top-[10px] right-[14.5px] sm:top-[2%] sm:left-[15px] cursor-pointer z-40">
+              <div class="flex justify-end sm:justify-center h-full items-end">
+                <p class="text-[10px] sm:text-[16px] text-white text-center mr-[-5px]">ARCHITECTURE</p>
               </div>
             </div>
-            <div class="section4 move-btn absolute w-[100px] h-[90px] bottom-[2%] left-[15px] cursor-pointer z-40">
+            <div class="section4 move-btn absolute w-[23px] sm:w-[100px] h-[40px] sm:h-[90px] bottom-[10px] right-[15.7px] sm:bottom-[2%] sm:left-[15px] cursor-pointer z-40">
               <div class="flex justify-center h-full items-start">
-                <p class="text-white text-center">WEBSITE</p>
+                <p class="text-[10px] sm:text-[16px] text-white text-center">WEBSITE</p>
               </div>
             </div>
           </div>
@@ -314,10 +334,10 @@
       <section class="pb-[26px] sm:pb-5 relative full-screen-height">
         <div class="pt-[90px] sm:pt-[140px] h-full w-full">
           <div class="h-full w-full overflow-hidden relative bg-gray-300">
-            <div class="absolute top-[25px] right-[30px] z-10">
+            <div class="hidden sm:block absolute top-[25px] right-[30px] z-10">
               <div class="description-btn active"><span></span><span></span></div>
             </div>
-            <div class="section-description close flex flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-[30px] absolute right-0 text-white tracking-[0.25em] z-[5]">
+            <div class="hidden sm:flex section-description close flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-[30px] absolute right-0 text-white tracking-[0.25em] z-[5]">
               <h3 class="text-[21px] mb-3 tracking-[4.2px] font-medium">WEBSITE</h3>
               <h4 class="text-lg mt-[38px] tracking-[7.2px] font-thin">集客力向上を目指す</h4>
 
@@ -328,21 +348,32 @@
                 </p>
               </div>
             </div>
-            <ul class="slide-item3 h-full w-full relative">
+            <div class="block sm:hidden h-[35%] px-[15px] pt-5 pb-[10px] bg-[#ADADAD] text-white">
+              <h3 class="text-[11px] mb-5 tracking-[calc(200em_/_1000)] font-light">WEBSITE</h3>
+              <h4 class="text-[18px] mb-8 tracking-[calc(180em_/_1000)] font-thin">集客力向上を目指す</h4>
+
+              <div class="text-[10px] mt-auto font-light leading-[calc(20_/_10)] tracking-[calc(180em_/_1000)]">
+                <p>
+                  集客力向上を目指すホームページの作成にはブランドイメージを伝える「デザイン力」、感情に訴えかける印象的な「写真」、動き・操作性・セキュリティなどの「技術力」が必要です。CACTUS
+                  designでは在籍のデザイナー、カメラマン、プログラマーによりお客様の利益に繋がるホームページを製作いたします。
+                </p>
+              </div>
+            </div>
+            <ul class="slide-item3 h-[65%] sm:h-full w-full sm:relative">
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg first-slide" src="./images/section4/A.jpg" alt="WEBSITE1" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section4/B.jpg" alt="WEBSITE2" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section4/C.jpg" alt="WEBSITE3" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section4/D.jpg" alt="WEBSITE4" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section4/E.jpg" alt="WEBSITE5" /></li>
             </ul>
-            <div class="section3 move-btn absolute w-[100px] h-[90px] top-[2%] left-[15px] cursor-pointer z-40">
+            <div class="section3 move-btn absolute w-[23px] sm:w-[100px] h-[40px] sm:h-[90px] top-[10px] right-[14.5px] sm:top-[2%] sm:left-[15px] cursor-pointer z-40">
               <div class="flex justify-center h-full items-end">
-                <p class="text-white text-center">INTERIOR</p>
+                <p class="text-[10px] sm:text-[16px] text-white text-center">INTERIOR</p>
               </div>
             </div>
-            <div class="section5 move-btn absolute w-[100px] h-[90px] bottom-[2%] left-[15px] cursor-pointer z-40">
+            <div class="section5 move-btn absolute w-[23px] sm:w-[100px] h-[40px] sm:h-[90px] bottom-[10px] right-[15.7px] sm:bottom-[2%] sm:left-[15px] cursor-pointer z-40">
               <div class="flex justify-center h-full items-start">
-                <p class="text-white text-center">GRAPHIC</p>
+                <p class="text-[10px] sm:text-[16px] text-white text-center">GRAPHIC</p>
               </div>
             </div>
           </div>
@@ -354,12 +385,12 @@
       <section class="pb-[26px] sm:pb-5 relative full-screen-height">
         <div class="pt-[90px] sm:pt-[140px] h-full w-full">
           <div class="h-full w-full overflow-hidden relative">
-            <div class="absolute top-[25px] right-[30px] z-10">
+            <div class="hidden sm:block absolute top-[25px] right-[30px] z-10">
               <div class="description-btn active"><span></span><span></span></div>
             </div>
-            <div class="section-description close flex flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-[30px] absolute right-0 text-white tracking-[0.25em] z-[5]">
+            <div class="hidden sm:flex section-description close flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-[30px] absolute right-0 text-white tracking-[0.25em] z-[5]">
               <h3 class="text-[21px] mb-3 tracking-[4.2px] font-medium">GRAPHIC</h3>
-              <h4 class="text-lg mt-[38px] tracking-[7.2px] font-thin">ブランディング、名刺、カタログ、写真</h4>
+              <h4 class="text-[18px] mb-8 tracking-[calc(30em_/_1000)] font-thin">ブランディング、名刺、カタログ、写真</h4>
 
               <div class="text-[14px] mt-auto text-[#FCF9F9]">
                 <p>
@@ -367,21 +398,31 @@
                 </p>
               </div>
             </div>
-            <ul class="slide-item4 h-full w-full relative">
+            <div class="block sm:hidden h-[35%] px-[15px] pt-5 pb-[10px] bg-[#ADADAD] text-white">
+              <h3 class="text-[11px] mb-5 tracking-[calc(200em_/_1000)] font-light">GRAPHIC</h3>
+              <h4 class="text-[18px] mb-8 tracking-[calc(180em_/_1000)] font-thin">ブランディング、名刺、カタログ、写真</h4>
+
+              <div class="text-[10px] mt-auto font-light leading-[calc(20_/_10)] tracking-[calc(180em_/_1000)]">
+                <p>
+                  サービスが飽和状態にある昨今では、競合他社との差別化が大変重要となります。ビジュアルにまつわるあらゆるイメージを統一することは、ブランドアイデンティティを明確に打ち出すことができます。それは明確な差別化を引き起こして認知度が飛躍的に向上し、集客・消費意欲へと還元されます。
+                </p>
+              </div>
+            </div>
+            <ul class="slide-item4 h-[65%] sm:h-full w-full sm:relative">
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg first-slide" src="./images/section5/A.jpg" alt="GRAPHIC1" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section5/B.jpg" alt="GRAPHIC2" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section5/C.jpg" alt="GRAPHIC3" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section5/D.jpg" alt="GRAPHIC4" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section5/E.jpg" alt="GRAPHIC5" /></li>
             </ul>
-            <div class="section4 move-btn absolute w-[100px] h-[90px] top-[2%] left-[15px] cursor-pointer z-40">
+            <div class="section4 move-btn absolute w-[23px] sm:w-[100px] h-[40px] sm:h-[90px] top-[10px] right-[14.5px] sm:top-[2%] sm:left-[15px] cursor-pointer z-40">
               <div class="flex justify-center h-full items-end">
-                <p class="text-white text-center">WEBSITE</p>
+                <p class="text-[10px] sm:text-[16px] text-white text-center">WEBSITE</p>
               </div>
             </div>
-            <div class="section6 move-btn absolute w-[100px] h-[90px] bottom-[2%] left-[15px] cursor-pointer z-40">
+            <div class="section6 move-btn absolute w-[23px] sm:w-[100px] h-[40px] sm:h-[90px] bottom-[10px] right-[15.7px] sm:bottom-[2%] sm:left-[15px] cursor-pointer z-40">
               <div class="flex justify-center h-full items-start">
-                <p class="text-white text-center">PRODUCT</p>
+                <p class="text-[10px] sm:text-[16px] text-white text-center">PRODUCT</p>
               </div>
             </div>
           </div>
@@ -393,10 +434,10 @@
       <section class="pb-[26px] sm:pb-5 relative full-screen-height">
         <div class="pt-[90px] sm:pt-[140px] h-full w-full">
           <div class="h-full w-full overflow-hidden relative">
-            <div class="absolute top-[25px] right-[30px] z-10">
+            <div class="hidden sm:block absolute top-[25px] right-[30px] z-10">
               <div class="description-btn active"><span></span><span></span></div>
             </div>
-            <div class="section-description close flex flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-[30px] absolute right-0 text-white tracking-[0.25em] z-[5]">
+            <div class="hidden sm:flex section-description close flex-col h-full w-[33%] pl-[50px] pr-10 pt-[35px] pb-[30px] absolute right-0 text-white tracking-[0.25em] z-[5]">
               <h3 class="text-[21px] mb-3 tracking-[4.2px] font-medium">PRODUCT</h3>
               <h4 class="text-lg mt-[38px] tracking-[7.2px] font-thin">競争力のある商品開発</h4>
 
@@ -406,16 +447,26 @@
                 </p>
               </div>
             </div>
-            <ul class="slide-item5 h-full w-full relative">
+            <div class="block sm:hidden h-[35%] px-[15px] pt-5 pb-[10px] bg-[#ADADAD] text-white">
+              <h3 class="text-[11px] mb-5 tracking-[calc(200em_/_1000)] font-light">PRODUCT</h3>
+              <h4 class="text-[18px] mb-8 tracking-[calc(180em_/_1000)] font-thin">競争力のある商品開発</h4>
+
+              <div class="text-[10px] mt-auto font-light leading-[calc(20_/_10)] tracking-[calc(180em_/_1000)]">
+                <p>
+                  お客さまの技術や特徴を最大限に活かし、機能的で美しいのは勿論のこと、今までにない体験ができるデザインをご提案いたします。また徹底的な市場調査に基づき、競合他社との差別化を図り競争力のある商品開発を目指します。
+                </p>
+              </div>
+            </div>
+            <ul class="slide-item5 h-[65%] sm:h-full w-full sm:relative">
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg first-slide" src="./images/section6/A.jpg" alt="PRODUCT1" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section6/B.jpg" alt="PRODUCT2" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section6/C.jpg" alt="PRODUCT3" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section6/D.jpg" alt="PRODUCT4" /></li>
               <li class="overflow-hidden"><img class="h-full w-full object-cover slideImg" src="./images/section6/E.jpg" alt="PRODUCT5" /></li>
             </ul>
-            <div class="section5 move-btn absolute w-[100px] h-[90px] top-[2%] left-[15px] cursor-pointer z-40">
+            <div class="section5 move-btn absolute w-[23px] sm:w-[100px] h-[40px] sm:h-[90px] top-[10px] right-[14.5px] sm:top-[2%] sm:left-[15px] cursor-pointer z-40">
               <div class="flex justify-center h-full items-end">
-                <p class="text-white text-center">GRAPHIC</p>
+                <p class="text-[10px] sm:text-[16px] text-white text-center">GRAPHIC</p>
               </div>
             </div>
           </div>
