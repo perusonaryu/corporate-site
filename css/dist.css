@@ -804,6 +804,10 @@ html {
   width: 128px;
 }
 
+.w-\[165\%\] {
+  width: 165%;
+}
+
 .w-\[16px\] {
   width: 16px;
 }
@@ -1398,6 +1402,11 @@ html {
 
   .sm\:justify-center {
     justify-content: center;
+  }
+
+  .sm\:bg-gray-300 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(209 213 219 / var(--tw-bg-opacity));
   }
 
   .sm\:px-\[50px\] {

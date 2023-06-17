@@ -38,9 +38,17 @@
   opacity: 1;
 }
 
+.spSlideImg {
+  transition: all 5s;
+  transform: translateX(0%);
+}
+
+.spSlideImg.active {
+  transform: translateX(-32.5%);
+}
+
 .slideImg {
   transition: all 20s;
-  transform: scale(1);
 }
 
 .slideImg.active {
@@ -51,7 +59,7 @@
 .section-animation {
   opacity: 0;
   animation-name: default-animation;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
 }
 
@@ -170,6 +178,15 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes sp-slide-animation {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 

@@ -17,11 +17,13 @@ $(function () {
   //スライドがあるセクション分slick適用
   for (i = 1; i <= 5; i++) {
     const slider = $('.slide-item' + i)
+    const spSlider = $('.sp-slide-item' + i)
     $('.slide-item' + i)
       .find('li')
       .addClass(function (j, ele) {
         return 'slide' + (j + 1)
       })
+    //PC用スライダー
     slider.slick({
       arrows: false, // 矢印
       dots: true, // インジケーター
@@ -31,12 +33,32 @@ $(function () {
       pauseOnFocus: false, //フォーカスで一時停止
       pauseOnHover: false, //マウスホバーで一時停止
       pauseOnDotsHover: false, //ドットナビをマウスホバーで一時停止
-      // prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+    })
+
+    //SP版スライダー
+    spSlider.slick({
+      arrows: false, // 矢印
+      dots: true, // インジケーター
+      dotsClass: 'sp-slide-dots',
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 1000,
+      autoplay: false,
+      autoplaySpeed: 5000,
+      pauseOnFocus: false, //フォーカスで一時停止
+      pauseOnHover: false, //マウスホバーで一時停止
+      pauseOnDotsHover: false, //ドットナビをマウスホバーで一時停止
     })
     slider.on('beforeChange', function (slick, currentSlide) {
       $(currentSlide.$slider[0]).find('.slick-active').find('img').removeClass('active')
     })
     slider.on('afterChange', function (slick, currentSlide) {
+      $(currentSlide.$slider[0]).find('.slick-active').find('img').addClass('active')
+    })
+    spSlider.on('beforeChange', function (slick, currentSlide, nextSlide) {
+      $(currentSlide.$slider[0]).find('.slick-active').find('img').removeClass('active')
+    })
+    spSlider.on('afterChange', function (slick, currentSlide) {
       $(currentSlide.$slider[0]).find('.slick-active').find('img').addClass('active')
     })
   }
@@ -58,6 +80,7 @@ $(window).on('load', function () {
         const prevSecIdx = sessionStorage.getItem('currentSectionNumber')
         const arrowBtn = $.scrollify.current().find('.move-btn')
         const firstSlideImgEle = $.scrollify.current().find('.first-slide')
+        const spFirstSlideImgEle = $.scrollify.current().find('.sp-first-slide')
         const nextSecDesEle = $.scrollify.current().find('.section-description')
         const prevSecDesEle = $(section[prevSecIdx]).find('.section-description')
 
@@ -74,6 +97,8 @@ $(window).on('load', function () {
           $('#arrows').css('z-index', '30')
           $('.slide-item' + i).slick('slickSetOption', 'autoplay', true, true)
           $('.slide-item' + prevSecIdx).slick('slickSetOption', 'autoplay', false, true)
+          $('.sp-slide-item' + i).slick('slickSetOption', 'autoplay', true, true)
+          $('.sp-slide-item' + prevSecIdx).slick('slickSetOption', 'autoplay', false, true)
           //各セクションの詳細テキスト、toggleボタン表示制御
           nextSecDesEle.removeClass('close')
           nextDesBtnEle.addClass('show')
@@ -81,9 +106,13 @@ $(window).on('load', function () {
           //セクション移動ボタン表示制御
           arrowBtn.addClass('active')
           $('#arrow-top').addClass('active')
-          //初期表示時のみ
+          //初期表示時のみ PC
           if (firstSlideImgEle.hasClass('done') == false) {
             firstSlideImgEle.addClass('active done')
+          }
+          //SP
+          if (spFirstSlideImgEle.hasClass('done') == false) {
+            spFirstSlideImgEle.addClass('active done')
           }
           if (i == 5) {
             $('#arrow-bottom').removeClass('active')

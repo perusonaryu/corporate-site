@@ -16,8 +16,18 @@
   justify-content: center;
   align-items: center;
 }
+.sp-slide-dots {
+  position: absolute;
+  bottom: 3%;
+  left: 30%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.slick-dots li {
+.slick-dots li,
+.sp-slide-dots li {
   display: flex;
   justify-content: center;
   align-items: end;
@@ -26,7 +36,8 @@
   height: 15px;
 }
 
-.slick-dots li button {
+.slick-dots li button,
+.sp-slide-dots li button {
   position: relative;
   text-indent: -9999px;
   border-radius: 50%;
@@ -35,6 +46,7 @@
   background-color: rgba(0, 0, 0, 0.45);
 }
 
-.slick-dots .slick-active button {
+.slick-dots .slick-active button,
+.sp-slide-dots .slick-active button {
   background-color: #fff;
 }
