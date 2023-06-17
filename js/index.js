@@ -32,6 +32,7 @@ $(function () {
       autoplaySpeed: 5000,
       pauseOnFocus: false, //フォーカスで一時停止
       pauseOnHover: false, //マウスホバーで一時停止
+      swipe: false, //スワイプ操作
       pauseOnDotsHover: false, //ドットナビをマウスホバーで一時停止
     })
 
@@ -47,6 +48,7 @@ $(function () {
       autoplaySpeed: 5000,
       pauseOnFocus: false, //フォーカスで一時停止
       pauseOnHover: false, //マウスホバーで一時停止
+      swipe: false, //スワイプ操作
       pauseOnDotsHover: false, //ドットナビをマウスホバーで一時停止
     })
     slider.on('beforeChange', function (slick, currentSlide) {
