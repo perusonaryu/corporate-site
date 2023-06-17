@@ -1467,4 +1467,22 @@ html {
   .sm\:tracking-\[1\.4px\] {
     letter-spacing: 1.4px;
   }
+
+  .sm\:duration-1000 {
+    transition-duration: 1000ms;
+  }
+
+  .group:hover .sm\:group-hover\:scale-125 {
+    --tw-scale-x: 1.25;
+    --tw-scale-y: 1.25;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .group:hover .sm\:group-hover\:opacity-60 {
+    opacity: 0.6;
+  }
+
+  .group:hover .sm\:group-hover\:duration-1000 {
+    transition-duration: 1000ms;
+  }
 }
