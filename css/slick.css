@@ -19,7 +19,7 @@
 .sp-slide-dots {
   position: absolute;
   bottom: 3%;
-  left: 30%;
+  left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
