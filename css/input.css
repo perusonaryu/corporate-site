@@ -10,6 +10,11 @@
   html {
     font-family: 'NotoSansJP';
   }
+  body {
+    /*スマホで勝手に文字が大きくなる対策*/
+    -webkit-text-size-adjust: 100%;
+  }
+
   .googlemap-bw iframe {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);

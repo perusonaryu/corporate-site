@@ -78,6 +78,7 @@ $(window).on('load', function () {
       easing: 'swing',
       updateHash: false,
       setHeights: false,
+      // touchScroll: false,
       after: (i, section) => {
         const prevSecIdx = sessionStorage.getItem('currentSectionNumber')
         const arrowBtn = $.scrollify.current().find('.move-btn')
@@ -98,9 +99,7 @@ $(window).on('load', function () {
         } else {
           $('#arrows').css('z-index', '30')
           $('.slide-item' + i).slick('slickSetOption', 'autoplay', true, true)
-          $('.slide-item' + prevSecIdx).slick('slickSetOption', 'autoplay', false, true)
           $('.sp-slide-item' + i).slick('slickSetOption', 'autoplay', true, true)
-          $('.sp-slide-item' + prevSecIdx).slick('slickSetOption', 'autoplay', false, true)
           //各セクションの詳細テキスト、toggleボタン表示制御
           nextSecDesEle.removeClass('close')
           nextDesBtnEle.addClass('show')
