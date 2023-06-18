@@ -5,12 +5,17 @@ $('.openbtn1').click(function () {
     $('#philosophy').addClass('d-n')
     $('#contact').addClass('d-n')
     $('#menuList').removeClass('d-n')
+    $.scrollify.disable()
+  } else {
+    $.scrollify.enable()
   }
   $('.openbtn1').toggleClass('active')
   if ($('#otherScreen').hasClass('d-n')) {
     $('#otherScreen').removeClass('d-n')
     $('#otherScreen').addClass('menu-fadein')
   } else {
+    $('#philosophy').addClass('d-n')
+    $('#contact').addClass('d-n')
     $('#otherScreen').toggleClass('menu-fadein menu-fadeout')
   }
 })
