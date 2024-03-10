@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="overflow-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,7 +7,7 @@
     <title>CACTUS design</title>
     <link rel="icon" href="./images/logoicon.ico" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="./css/dist.css?ver=1.0.5" />
+    <link rel="stylesheet" href="./css/dist.css?ver=1.0.6" />
     <link rel="stylesheet" href="./css/btn.css?ver=1.0.0" />
     <link rel="stylesheet" href="./css/original.css?ver=1.0.3" />
     <link rel="stylesheet" href="./css/slick.css" />
@@ -24,13 +24,13 @@
     <nav id="otherScreen" class="fixed top-0 h-[0px] w-[calc(100%_-_20px)] sm:w-[calc(100%_-_40px)] mt-[90px] sm:mt-[140px] mx-[10px] sm:mx-5 bg-white z-50 d-n">
       <div class="relative h-full w-full">
         <ul id="menuList" class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-          <li class="mb-9 tracking-[2.7px] text-[#A4B0AB]"><a class="text-3xl">ARCHITECTURE</a></li>
-          <li class="mb-9 tracking-[2.7px] text-[#A4B0AB]"><a class="text-3xl">INTERIOR</a></li>
-          <li class="mb-9 tracking-[2.7px] text-[#A4B0AB]"><a class="text-3xl">WEBSITE</a></li>
-          <li class="mb-9 tracking-[2.7px] text-[#A4B0AB]"><a class="text-3xl">GRAPHIC</a></li>
-          <li class="mb-9 tracking-[2.7px] text-[#A4B0AB]"><a class="text-3xl">PRODUCT</a></li>
-          <li id="philosophyBtn" class="mb-9 tracking-[2.7px]"><a class="text-3xl hover:opacity-50 duration-500 cursor-pointer">PHILOSOPHY</a></li>
-          <li id="contactBtn" class="mb-9 tracking-[2.7px]"><a class="text-3xl hover:opacity-50 duration-500 cursor-pointer">CONTACT</a></li>
+          <li class="mb-9 tracking-[2.7px] text-[#A4B0AB]"><a class="text-xl sm:text-3xl">ARCHITECTURE</a></li>
+          <li class="mb-9 tracking-[2.7px] text-[#A4B0AB]"><a class="text-xl sm:text-3xl">INTERIOR</a></li>
+          <li class="mb-9 tracking-[2.7px] text-[#A4B0AB]"><a class="text-xl sm:text-3xl">WEBSITE</a></li>
+          <li class="mb-9 tracking-[2.7px] text-[#A4B0AB]"><a class="text-xl sm:text-3xl">GRAPHIC</a></li>
+          <li class="mb-9 tracking-[2.7px] text-[#A4B0AB]"><a class="text-xl sm:text-3xl">PRODUCT</a></li>
+          <li id="philosophyBtn" class="mb-9 tracking-[2.7px]"><a class="text-xl sm:text-3xl hover:opacity-50 duration-500 cursor-pointer">PHILOSOPHY</a></li>
+          <li id="contactBtn" class="mb-9 tracking-[2.7px]"><a class="text-xl sm:text-3xl hover:opacity-50 duration-500 cursor-pointer">CONTACT</a></li>
         </ul>
         <div id="philosophy" class="w-full h-full text-center text-sm flex justify-center items-center relative d-n">
           <div class="px-[10px] sm:pt-8 w-full h-[80%] sm:h-[auto] overflow-y-scroll sm:overflow-hidden sm:w-[60%]">
@@ -72,45 +72,37 @@
           <div class="pt-[60px] sm:pt-[86px] mx-[10px] sm:ml-[80px] h-[50%]">
             <h3 class="text-[14px] sm:text-base font-semibold absolute left-[10px] sm:left-[30px] top-[20px] sm:top-[30px]">CONTACT</h3>
             <div class="menuBtn text-[14px] sm:text-base font-semibold absolute right-[10px] sm:right-[30px] top-[20px] sm:top-[30px] cursor-pointer">MENU</div>
-            <div class="mb-[35px] text-[11px] sm:text-xs font-semibold">
-              <h2 class="mb-4 sm:mb-7 tracking-[1.6px]">カクタスデザイン</h2>
-              <table>
-                <tr>
-                  <th class="w-[60px] text-left inline-block mr-[14px] sm:mr-[25px] mb-1">共同代表</th>
-                  <td valign="top">古謝 毅 / デザイナー・ディレクター</td>
-                </tr>
-                <tr>
-                  <th class="w-[60px] text-left inline-block mr-[14px] sm:mr-[25px] mb-7"></th>
-                  <td valign="top">酒井 篤志 / デザイナー・二級建築士</td>
-                </tr>
-                <tr>
-                  <th class="h-[10px] sm:h-[15px] w-[60px]"></th>
-                  <td valign="top"></td>
-                </tr>
-                <tr>
-                  <th class="text-left inline-block mr-[14px] sm:mr-[25px] mb-3">事業内容</th>
-                  <td valign="top">建築デザイン、インテリアデザイン、webデザイン、グラフィックデザイン、プロダクトデザイン</td>
-                </tr>
-                <tr>
-                  <th class="h-[10px] sm:h-[15px] w-[60px]"></th>
-                  <td valign="top"></td>
-                </tr>
-                <tr>
-                  <th class="text-left inline-block mr-[14px] sm:mr-[25px]">住所</th>
-                  <td valign="top">
+            <div class="h-full text-[11px] sm:text-xs font-semibold overflow-y-scroll sm:overflow-hidden">
+              <h2 class="mb-3 sm:mb-7 tracking-[1.6px]">カクタスデザイン</h2>
+              <ul class="mb-3">
+                <li class="flex items-stretch">
+                  <p class="w-[15%] sm:w-[60px] h-full mr-2 sm:mr-3">共同代表</p>
+                  <p class="w-[85%] h-full">古謝 毅 / デザイナー・ディレクター</p>
+                </li>
+                <li class="flex items-stretch mb-4">
+                  <p class="w-[15%] sm:w-[60px] h-full mr-2 sm:mr-3"></p>
+                  <p class="w-[85%] h-full">酒井 篤志 / デザイナー・二級建築士</p>
+                </li>
+                <li class="flex items-stretch mb-4">
+                  <p class="w-[15%] sm:w-[60px] h-full mr-2 sm:mr-3">事業内容</p>
+                  <p class="w-[85%] h-full">建築デザイン、インテリアデザイン、webデザイン、グラフィックデザイン、プロダクトデザイン</p>
+                </li>
+                <li class="flex items-stretch mb-2">
+                  <p class="w-[15%] sm:w-[60px] h-full mr-2 sm:mr-3">住所</p>
+                  <p class="w-[85%] h-full">
                     〒904-0203 <br class="sm:hidden block" />
                     沖縄県中頭郡嘉手納町字嘉手納405-7 1F
-                  </td>
-                </tr>
-                <tr>
-                  <th class="text-left inline-block mr-[14px] sm:mr-[25px]">TEL</th>
-                  <td valign="top">050-1299-9763</td>
-                </tr>
-                <tr>
-                  <th class="text-left inline-block mr-[14px] sm:mr-[25px]">MAIL</th>
-                  <td valign="top">info@cactusdesign.jp</td>
-                </tr>
-              </table>
+                  </p>
+                </li>
+                <li class="flex items-stretch mb-2">
+                  <p class="w-[15%] sm:w-[60px] h-full mr-2 sm:mr-3">TEL</p>
+                  <p class="w-[85%] h-full">050-1299-9763</p>
+                </li>
+                <li class="flex items-stretch mb-2">
+                  <p class="w-[15%] sm:w-[60px] h-full mr-2 sm:mr-3">MAIL</p>
+                  <p class="w-[85%] h-full">info@cactusdesign.jp</p>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="w-full h-[50%] absolute bottom-0 googlemap-bw">
@@ -144,7 +136,7 @@
         </div>
       </div>
       <!-- 1ページ目 start -->
-      <section class="pb-[55px] sm:pb-5 full-screen-height bg-[#A4B0AB]">
+      <section class="pb-[26px] sm:pb-5 full-screen-height bg-[#A4B0AB]">
         <ul id="top-list" class="pt-[90px] sm:pt-[140px] top-list grid sm:grid-cols-5 grid-cols-1 grid-rows-5 sm:grid-rows-1 gap-5 h-full text-center text-white">
           <li class="flex sm:items-end section2">
             <div class="flex flex-row-reverse justify-between group cursor-pointer h-[100%] sm:h-[85%] w-full sm:inline-block">
